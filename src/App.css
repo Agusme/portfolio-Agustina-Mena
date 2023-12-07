@@ -11,4 +11,12 @@
   padding: 0;
   margin:0;
   box-sizing: border-box;
+   color: #302E2F
+
+}
+.icon{
+  font-size: 30px;
+}
+.color-green{
+  color:#DDD046
 }
