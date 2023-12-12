@@ -1,22 +1,50 @@
-.navbar-color{
-  background-color: #F4E7E7;
-}
 .footer-color{
-  background-color: #F8F3A1;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  background-color: #AF8E76;
+            bottom: 0;
+            width: 100%;
+
 }
 *{
   padding: 0;
   margin:0;
   box-sizing: border-box;
-   color: #302E2F
 
 }
 .icon{
   font-size: 30px;
 }
-.color-green{
-  color:#DDD046
+.icon:hover{
+  font-size: 30px;
+  color: #E3E3E1;
+}
+
+
+.marginTop{
+  margin-top: 60px;
+}
+.color-tittle{
+  color: #302E2F
+}
+.bg-grey{
+  background: #E3E3E1
+}
+.bg-brown{
+  background:#AF8E76;
+}
+.bg-arena{
+  background: #D7C7AE
+}
+.bg-cemento{
+  background:#CDC4BB
+}
+.bg-lightBrown{
+  background:#867A6B
+}
+.bg-verde{
+  background:#8D9988
+}
+
+ul li:hover{
+  color: #E3E3E1;
+
 }
