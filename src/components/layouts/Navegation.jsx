@@ -1,22 +1,18 @@
 import React from 'react';
 import {  Container, Nav, Navbar } from 'react-bootstrap';
-import logo from '../../assets/logofigm.png'
 const Navigation = () => {
     return (
        
        <>
-    <Navbar expand="lg" bg="dark" data-bs-theme="dark" fixed="top"> 
+    <Navbar expand="lg" bg='white' fixed="top"> 
       <Container >
       <Navbar.Brand>
-          <img
-            src={logo}
-            alt="Logo de la Empresa"
-            height="40"
-            className="d-inline-block align-top logounico"
-          />
+          <p
+            className="d-inline-block align-top color-cemento fw-bold"
+          >Agustina Mena </p>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll" className='fw-bold'>
+        <Navbar.Collapse id="navbarScroll" className='fw-bold color-cemento'>
           <Nav
             className="ms-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}

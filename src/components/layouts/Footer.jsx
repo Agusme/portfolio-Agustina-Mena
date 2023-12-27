@@ -6,15 +6,12 @@ import logo from '../../assets/logofigm.png'
 const Footer = () => {
   return (
    <>
-    <div expand="lg" className="footer-color fw-semibold pt-3" fluid>
+    <div expand="lg" className="bg-cemento-oscuro text-white fw-semibold pt-3" fluid>
       <Container className="text-center">
         <Row>
-          <Col lg={3} sm={12}> <img
-            src={logo}
-            alt="Logo de la Empresa"
-            height="70"
-            className="d-inline-block align-top logounico"
-          /></Col>
+          <Col lg={3} sm={12}>     <p
+            className="d-inline-block align-top pt-3 fw-bold fs-4"
+          >Agustina Mena </p></Col>
              <Col lg={3} sm={12}>
              <p className="fw-bold">PÁGINAS</p>
 
@@ -58,7 +55,8 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
-      <div className="bg-grey pt-2 pb-1">
+      <hr />
+      <div className="pt-2 pb-1">
 <p className="text-center">© 2023 Todos los derechos reservados</p>
     </div>
     </div>
