@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <div>
       <Container fluid className="marginTop bg-cemento">
-        <Row className="d-flex align-items-center mt-5 py-5">
+        <Row className="d-flex align-items-center mt-5 pb-5">
           <Col className="p-2 px-5 mt-5 text-center" lg={7} md={6} sm={12}>
             <h1 className="fw-bold display-1 text-white">
               &lt;Hola a Todos&gt;
@@ -16,7 +16,7 @@ const Main = () => {
             </p>
           </Col>
           <Col
-            className="d-flex align-items-center justify-content-center my-5 pb-5"
+            className="d-flex align-items-center justify-content-center my-5 pt-3"
             lg={5}
             md={6}
             sm={12}

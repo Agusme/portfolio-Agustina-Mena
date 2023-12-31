@@ -34,7 +34,10 @@ ul li:hover{
   color:#a7ab9e;
 
 }
-.icon-size {
-  width: 10vh;
-  height: 4vw;
+
+@media (min-width: 576px) {
+  .icon-size {
+    width: 50%;
+    height: auto;
+  }
 }
