@@ -10,7 +10,7 @@ const Main = () => {
             <h1 className="fw-bold display-1 text-white">
               &lt;Hola a Todos&gt;
             </h1>
-            <p className="fw-bold color-cemento fs-1">Soy Agustina Mena</p>
+            <p className="fw-bold text-black fs-1">Soy Agustina Mena</p>
             <p className="text-white fw-semibold mt-2">
               Fullstack Mern Developer | Psicopedagoga
             </p>
