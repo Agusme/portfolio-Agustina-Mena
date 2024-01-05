@@ -15,26 +15,26 @@ const Footer = () => {
              <p className="fw-bold">PÁGINAS</p>
 
             <ul className="list-unstyled">
-<hr />
               <li>Proyectos</li>
               <li>Sobre mi</li>
               <li>Contacto</li>
             </ul>
+            <hr />
+
           </Col>
             <Col lg={3} sm={12}>
             <p className="fw-bold">MAS INFORMACIÓN</p>
 
             <ul className="list-unstyled">
-              <hr />
               <li>Celular: 3815633405</li>
 
               <li> agusmena60@gmail.com</li>
             </ul>
+            <hr />
           </Col>
        
           <Col lg={3} sm={12}>
           <p className="fw-bold">REDES</p>
-          <hr />
 
             <ul className="list-unstyled d-flex  d-flex justify-content-center">
 
