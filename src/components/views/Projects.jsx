@@ -8,7 +8,7 @@ import bmz from "../../assets/proyectos/bmz.jpeg";
 const Projects = () => {
   return (
     <div className="pb-5 pt-3 bg-main">
-      <h1 className="text-center fs-1 pb-1 fw-bold text-white mt-5">
+      <h1 className="text-center fs-1 pb-1 fw-bold text-white mt-3">
         Proyectos
       </h1>
       <Container>
