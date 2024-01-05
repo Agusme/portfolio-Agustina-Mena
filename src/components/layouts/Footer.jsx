@@ -19,7 +19,6 @@ const Footer = () => {
               <li>Sobre mi</li>
               <li>Contacto</li>
             </ul>
-            <hr />
 
           </Col>
             <Col lg={3} sm={12}>
@@ -30,7 +29,6 @@ const Footer = () => {
 
               <li> agusmena60@gmail.com</li>
             </ul>
-            <hr />
           </Col>
        
           <Col lg={3} sm={12}>
@@ -54,7 +52,6 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
-      <hr />
       <div className="pt-2 pb-1">
 <p className="text-center">© 2023 Todos los derechos reservados</p>
     </div>
