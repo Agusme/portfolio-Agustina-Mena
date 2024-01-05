@@ -64,7 +64,7 @@ const Projects = () => {
         <Row>
           <Col lg={6} md={6} sm={12}>
             <a
-              href="https://veterinariarolling.netlify.app/"
+              href="https://inmobiliaria-bmz-propiedades.netlify.app/"
               target="_blanck"
               className="text-decoration-none"
             >
