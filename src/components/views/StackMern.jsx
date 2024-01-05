@@ -14,43 +14,43 @@ import react from "../../assets/iconos/react.svg";
 import { Col, Container, Row } from "react-bootstrap";
 const StackMern = () => {
   return (
-    <div className="bg-cemento py-5">
+    <div className="bg-stack py-5">
       <Container className="bg-glass">
-        <h1 className="text-center text-black fs-1 pb-1 fw-semibold">
+        <h1 className="text-center text-white fs-1 my-3 py-3 fw-semibold">
           Mi Stack tecnologico
         </h1>
         <Row >
           <Col lg={3} md={3} sm={6} className="text-center py-2">
             <img src={html5} alt="html5 icon" className="img-fluid mx-2 icon-size" />
-            <p className="fw-semibold text-black">HTML5</p>
+            <p className="fw-semibold text-white pt-2">HTML5</p>
           </Col>
 
           <Col lg={3} md={3} sm={6} className="text-center py-2">
             <img src={css3} alt="css3 icon " className="img-fluid mx-2 icon-size" />
-            <p className="fw-semibold text-black">Css3</p>
+            <p className="fw-semibold text-white pt-2">Css3</p>
 
           </Col>
           <Col lg={3} md={3} sm={6} className="text-center py-2">
             <img src={js} alt="javascript icon" className="img-fluid mx-2 icon-size" />
-            <p className="fw-semibold text-black">Javascript</p>
+            <p className="fw-semibold text-white pt-2">Javascript</p>
 
           </Col>
 
           <Col lg={3} md={3} sm={6} className="text-center py-2">
             <img src={react} alt="React icon" className="img-fluid mx-2 icon-size" />
-            <p className="fw-semibold text-black">React</p>
+            <p className="fw-semibold text-white pt-2">React</p>
 
           </Col>
         </Row>
         <Row>
           <Col lg={3} md={3} sm={6} className="text-center py-2">
             <img src={github} alt="Github icon" className="img-fluid mx-2 icon-size" />
-            <p className="fw-semibold text-black">Github</p>
+            <p className="fw-semibold text-white pt-2">Github</p>
 
           </Col>
           <Col lg={3} md={3} sm={6} className="text-center py-2">
             <img src={express} alt="express" className="img-fluid mx-2 icon-size" />
-            <p className="fw-semibold text-black">Express</p>
+            <p className="fw-semibold text-white pt-2">Express</p>
 
           </Col>
           <Col lg={3} md={3} sm={6} className="text-center py-2">
@@ -59,7 +59,7 @@ const StackMern = () => {
               alt="mongodb"
               className="img-fluid mx-2 icon-size"
             />
-                        <p className="fw-semibold text-black">MongoDB</p>
+                        <p className="fw-semibold text-white pt-2">MongoDB</p>
 
           </Col>
 
@@ -69,7 +69,7 @@ const StackMern = () => {
               alt="node js"
               className="img-fluid mx-2 icon-size"
             />
-                        <p className="fw-semibold text-black">Node js</p>
+                        <p className="fw-semibold text-white pt-2">Node js</p>
 
           </Col>
         </Row>
@@ -80,7 +80,7 @@ const StackMern = () => {
               alt="Figma icon"
               className="img-fluid mx-2 icon-size"
             />
-                        <p className="fw-semibold text-black">Figma</p>
+                        <p className="fw-semibold text-white pt-2">Figma</p>
 
           </Col>
           
@@ -90,17 +90,17 @@ const StackMern = () => {
               alt="Boostrap Icon"
               className="img-fluid mx-2 icon-size"
             />
-                        <p className="fw-semibold text-black">Boostrap</p>
+                        <p className="fw-semibold text-white pt-2">Boostrap</p>
 
           </Col>
           <Col lg={3} md={3} sm={6} className="text-center py-2">
             <img src={visual} alt="Visual Studio Code Icon" className="img-fluid mx-2 icon-size" />
-            <p className="fw-semibold text-black">Visual Studio Code</p>
+            <p className="fw-semibold text-white pt-2">Visual Studio Code</p>
 
           </Col>
           <Col lg={3} md={3} sm={6} className="text-center py-2">
             <img src={corelDraw} alt="Corel Draw" className="img-fluid mx-2 icon-size" />
-            <p className="fw-semibold text-black">Corel Draw</p>
+            <p className="fw-semibold text-white pt-2">Corel Draw</p>
 
           </Col>
         </Row>

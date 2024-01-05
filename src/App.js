@@ -13,8 +13,9 @@ function App() {
     <>
       <Navegation />
       <Main />
-      <Projects />
       <StackMern />
+      <Projects />
+
       <Footer />
     </>
   );
