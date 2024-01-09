@@ -15,10 +15,10 @@ import { Col, Container, Row } from "react-bootstrap";
 const StackMern = () => {
   return (
     <div className="bg-stack py-5">
-      <Container className="bg-glass">
-        <h1 className="text-center text-white fs-1 my-3 py-3 fw-semibold">
-          Mi Stack tecnologico
-        </h1>
+          <h1 className="text-center text-white fs-1 pb-3 fw-bold">
+        My Technology Stack        </h1>
+      <Container className="bg-glass pt-4">
+    
         <Row >
           <Col lg={3} md={3} sm={6} className="text-center py-2">
             <img src={html5} alt="html5 icon" className="img-fluid mx-2 icon-size" />

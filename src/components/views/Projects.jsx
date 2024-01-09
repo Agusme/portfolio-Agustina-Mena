@@ -4,12 +4,13 @@ import rollingMovies from "../../assets/proyectos/rollingMovies.jpg";
 import turismo from "../../assets/proyectos/turismo.jpeg";
 import veterinaria from "../../assets/proyectos/veterinaria.jpeg";
 import bmz from "../../assets/proyectos/bmz.jpeg";
+import paleta from "../../assets/proyectos/paleta.jpeg";
 
 const Projects = () => {
   return (
     <div className="pb-5 pt-3 bg-main">
       <h1 className="text-center fs-1 pb-1 fw-bold text-white mt-3">
-        Proyectos
+        Projects
       </h1>
       <Container>
         <Row>
@@ -27,7 +28,7 @@ const Projects = () => {
                   <img
                     src={rollingMovies}
                     alt="img rolling movies projects"
-                    className="img-fluid rounded"
+                    className="img-fluid rounded img-projects"
                   />
                   <hr />
                   <p className="fw-semibold size-project my-2">
@@ -50,7 +51,7 @@ const Projects = () => {
                   <img
                     src={turismo}
                     alt="img turismo projects"
-                    className="img-fluid rounded"
+                    className="img-fluid rounded  img-projects"
                   />
                   <hr />
                   <p className="fw-semibold size-project my-2">
@@ -71,12 +72,12 @@ const Projects = () => {
               <Card className="my-3 mx-5 bg-glass text-white text-center project-card">
                 <Card.Body>
                   <Card.Title className="fw-semibold">
-                    Inmboliaria Bmz Propiedades
+                    Inmobiliaria Bmz Propiedades
                   </Card.Title>
                   <img
                     src={bmz}
                     alt="img inmobiliaria projects"
-                    className="img-fluid rounded"
+                    className="img-fluid rounded  img-projects"
                   />
                   <hr />
                   <p className="fw-semibold my-2 size-project">
@@ -100,7 +101,7 @@ const Projects = () => {
                   <img
                     src={veterinaria}
                     alt="img veterinaria projects"
-                    className="img-fluid rounded"
+                    className="img-fluid rounded  img-projects"
                   />
                   <hr />
                   <p className="fw-semibold my-2 size-project">
@@ -114,22 +115,22 @@ const Projects = () => {
         <Row>
           <Col lg={6} md={6} sm={12}>
             <a
-              href="https://veterinariarolling.netlify.app/"
+              href="https://colourpallete.netlify.app/"
               target="_blanck"
               className="text-decoration-none"
             >
               <Card className="my-3 mx-5 bg-glass text-white text-center project-card">
                 <Card.Body>
                   <Card.Title className="fw-semibold">
-                    Veterinaria Rolling
+                  Colour Pallete
                   </Card.Title>
                   <img
-                    src={veterinaria}
-                    alt="img veterinaria projects"
-                    className="img-fluid"
+                    src={paleta}
+                    alt="img colour pallete"
+                    className="img-fluid  img-projects"
                   />
                   <p className="fw-semibold my-2 size-project">
-                    HTML | CSS | BOOSTRAP | REACT | MONGO DB | NODE.JS
+                    HTML | CSS | BOOSTRAP | REACT | LOCALSTORAGE
                   </p>
                 </Card.Body>
               </Card>

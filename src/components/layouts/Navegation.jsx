@@ -18,9 +18,9 @@ const Navigation = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">PROYECTOS</Nav.Link>
-            <Nav.Link href="#action2">SOBRE MI</Nav.Link>
-            <Nav.Link href="#action2">CONTACTO</Nav.Link>
+            <Nav.Link href="#action1">PROJECTS</Nav.Link>
+            <Nav.Link href="#action2">ABOUT</Nav.Link>
+            <Nav.Link href="#action2">CONTACT</Nav.Link>
 
           </Nav>
           

@@ -12,17 +12,17 @@ const Footer = () => {
             className="d-inline-block align-top pt-3 fw-bold fs-4"
           >Agustina Mena </p></Col>
              <Col lg={3} sm={12}>
-             <p className="fw-bold">PÁGINAS</p>
+             <p className="fw-bold">Pages</p>
 
             <ul className="list-unstyled">
-              <li>Proyectos</li>
-              <li>Sobre mi</li>
-              <li>Contacto</li>
+              <li>Projects</li>
+              <li>About me </li>
+              <li>Contact</li>
             </ul>
 
           </Col>
             <Col lg={3} sm={12}>
-            <p className="fw-bold">MAS INFORMACIÓN</p>
+            <p className="fw-bold">More information</p>
 
             <ul className="list-unstyled">
               <li>Celular: 3815633405</li>
@@ -32,7 +32,7 @@ const Footer = () => {
           </Col>
        
           <Col lg={3} sm={12}>
-          <p className="fw-bold">REDES</p>
+          <p className="fw-bold">Social media</p>
 
             <ul className="list-unstyled d-flex  d-flex justify-content-center">
 
@@ -53,7 +53,7 @@ const Footer = () => {
         </Row>
       </Container>
       <div className="pt-2 pb-1">
-<p className="text-center">© 2023 Todos los derechos reservados</p>
+<p className="text-center">© 2024 All rights reserved</p>
     </div>
     </div>
   
