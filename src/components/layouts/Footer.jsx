@@ -35,19 +35,26 @@ const Footer = () => {
           <p className="fw-bold">Social media</p>
 
             <ul className="list-unstyled d-flex  d-flex justify-content-center">
-
-              <li className="mx-2 icon">
-                <FaGithub />
-              </li>
+            <a href="https://github.com/Agusme" className="text-decoration-none" style={{ color: 'inherit' }}  target="_blank"  rel="noopener noreferrer">
+    <li className="mx-2 icon">
+      <FaGithub />
+    </li>
+  </a>
+  <a href="https://www.linkedin.com/in/agustina-mena-169298204/" style={{ color: 'inherit' }}  target="_blank"  rel="noopener noreferrer">
               <li className="mx-2 icon">
                 <FaLinkedin />
-              </li>
-              <li className="mx-2 icon">
+              </li></a>
+         <a href="https://www.facebook.com/agusmena97/"style={{ color: 'inherit' }}  target="_blank"  rel="noopener noreferrer">
+         <li className="mx-2 icon">
                 <FaFacebook />
               </li>
-              <li className="mx-2 icon">
+         </a>
+           <a href="https://www.instagram.com/agusmenaa/"style={{ color: 'inherit' }}  target="_blank"  rel="noopener noreferrer">
+           <li className="mx-2 icon">
                 <FaInstagram />
               </li>
+           </a>
+             
             </ul>
           </Col>
         </Row>
