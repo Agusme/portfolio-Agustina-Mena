@@ -20,9 +20,9 @@ const About = () => {
             </p>
             <p>
               I also strive to learn and apply new knowledge constantly, as I
-              believe that learning is fundamental to everyone's life.
+              believe that learning is essential to keep growing and developing,
+              both personally and professionally.
             </p>
-
             <p>
               With a strong background in psycho-pedagogy, I combine technical
               skills with a deep understanding of human learning. My goal is to
