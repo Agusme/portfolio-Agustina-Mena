@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Button, Col, Container, Form, Modal, Row } from "react-bootstrap";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import {
   validateEmail,
@@ -11,6 +11,7 @@ import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const { register, handleSubmit, errors, reset } = useForm();
+const [showModal, setShowModal] = React.useState(false)
 
   const emailjsConfig = {
     serviceId: "service_72n9tya",
@@ -22,10 +23,9 @@ const Contact = () => {
     try {
       const emailData = {
         ...data,
-        user_name: data.name,
-        user_email: data.email,
-      message: data.message,
-
+        user_name: data.user_name,
+        user_email: data.user_email,
+        message: data.message,
       };
      const response = await emailjs.send(
   emailjsConfig.serviceId,
@@ -34,10 +34,15 @@ const Contact = () => {
   emailjsConfig.publicKey
 );
 console.log("correo enviado con exito: ", response);
+setShowModal(true);
 reset();
     } catch (error) {
       console.log("error al enviar el correo", error);
     }
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
   };
   return (
     <div className="bg-main py-5 text-white">
@@ -174,7 +179,21 @@ reset();
           </Col>
         </Row>
       </Container>
+      <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Consulta Enviada</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Gracias por su consulta!
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseModal}>
+            Cerrar
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
+
   );
 };
 
