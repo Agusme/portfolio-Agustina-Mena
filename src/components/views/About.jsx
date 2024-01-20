@@ -8,7 +8,7 @@ const About = () => {
       <Container>
         <h1 className="text-center fw-bold text-white py-4">About me</h1>
 
-        <Row className="bg-glass p-3">
+        <Row className="bg-glass p-5">
           <Col sm={12} md={6} lg={6}>
             <h4 className="fw-semibold py-2">
               Hi, I'm Agustina Mena, Fullstack Web Developer and
@@ -43,7 +43,7 @@ const About = () => {
             <img
               src={about}
               alt="about"
-              className="d-flex justify-content-center img-fluid w-50 rounded my-3"
+              className="d-flex justify-content-center img-fluid w-75 rounded"
             />
           </Col>
         </Row>
