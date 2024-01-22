@@ -20,11 +20,11 @@ const Certifications = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 3,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
+      items: 2,
     },
   };
   return (
@@ -37,45 +37,45 @@ const Certifications = () => {
             <img
               src={certRolling}
               alt="certificado Rolling Code"
-              className="img-fluid w-75"
+              className="img-fluid w-100 p-3"
             />
-            <p className="text-center fw-bold my-2">Rolling Code</p>
+            <p className="text-center fw-bold">Rolling Code</p>
             <p>Fullstack web programming</p>
           </div>
           <div className="text-center">
             <img
               src={prof}
               alt="certificado CertiProf"
-              className="img-fluid w-75"
+              className="img-fluid w-100 p-3"
             />
-            <p className="text-center fw-bold my-2">CertiProf</p>
+            <p className="text-center fw-bold">CertiProf</p>
             <p>Scrum</p>
           </div>
           <div className="text-center">
             <img
               src={certCodo}
               alt="certificado Codo a codo"
-              className="img-fluid w-75"
+              className="img-fluid w-100 p-3"
             />
-            <p className="text-center fw-bold my-2">Codo a codo</p>
+            <p className="text-center fw-bold">Codo a codo</p>
             <p>Initial programming</p>
           </div>
           <div className="text-center">
             <img
               src={alura}
               alt="certificado alura"
-              className="img-fluid w-75"
+              className="img-fluid w-100 p-3"
             />
-            <p className="text-center fw-bold my-2">Alura Latam</p>
+            <p className="text-center fw-bold">Alura Latam</p>
             <p>Javascript</p>
           </div>
           <div className="text-center">
             <img
               src={google}
               alt="certificado Google Activate"
-              className="img-fluid w-75"
+              className="img-fluid w-100 p-3 "
             />
-            <p className="text-center fw-bold my-2">Google Activate</p>
+            <p className="text-center fw-bold">Google Activate</p>
             <p>Introduction to web development</p>
           </div>
        
