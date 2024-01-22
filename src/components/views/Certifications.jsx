@@ -31,9 +31,8 @@ const Certifications = () => {
     <div className="bg-main p-5 text-white">
       <Container>
         <h1 className="text-center  fs-1 pb-3 fw-bold">Certifications </h1>
-        <div className="bg-glass py-5">
-        <Carousel responsive={responsive}     
->
+        <Carousel responsive={responsive} className="bg-glass py-5">
+ 
         <div className="text-center ">
             <img
               src={certRolling}
@@ -82,7 +81,6 @@ const Certifications = () => {
        
         </Carousel>
 
-        </div>
  
       </Container>
     </div>
