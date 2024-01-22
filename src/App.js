@@ -9,6 +9,7 @@ import Projects from "./components/views/Projects";
 import StackMern from "./components/views/StackMern";
 import About from "./components/views/About";
 import Contact from "./components/views/Contact";
+import Certifications from "./components/views/Certifications";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Projects />
       <StackMern />
+      <Certifications/>
       <Contact />
       <Footer />
     </>

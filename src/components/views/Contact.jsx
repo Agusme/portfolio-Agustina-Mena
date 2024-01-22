@@ -45,7 +45,7 @@ reset();
     setShowModal(false);
   };
   return (
-    <div className="bg-main py-5 text-white">
+    <div className="bg-stack py-5 text-white">
       <h1 className="text-center  fs-1 pb-3 fw-bold">Contact me </h1>
       <Container className="bg-glass p-5">
         <Row>
