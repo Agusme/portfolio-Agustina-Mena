@@ -11,7 +11,6 @@ import "react-multi-carousel/lib/styles.css";
 const Certifications = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -25,7 +24,7 @@ const Certifications = () => {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
+      items: 2,
     },
   };
   return (
@@ -34,7 +33,7 @@ const Certifications = () => {
         <h1 className="text-center  fs-1 pb-3 fw-bold">Certifications </h1>
         <div className="bg-glass p-5">
         <Carousel responsive={responsive}>
-        <div className="text-center">
+        <div className="text-center ">
             <img
               src={certRolling}
               alt="certificado Rolling Code"
