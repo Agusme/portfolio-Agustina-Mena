@@ -181,11 +181,10 @@ reset();
       </Container>
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
-          <Modal.Title>Consulta Enviada</Modal.Title>
+          <Modal.Title>Query submitted</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          Gracias por su consulta!
-        </Modal.Body>
+        Thank you for your inquiry!        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCloseModal}>
             Cerrar
