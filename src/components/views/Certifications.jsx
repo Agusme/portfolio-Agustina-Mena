@@ -24,15 +24,16 @@ const Certifications = () => {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2,
+      items: 1,
     },
   };
   return (
-    <div className="bg-main py-5 text-white">
+    <div className="bg-main p-5 text-white">
       <Container>
         <h1 className="text-center  fs-1 pb-3 fw-bold">Certifications </h1>
-        <div className="bg-glass p-5">
-        <Carousel responsive={responsive}>
+        <div className="bg-glass py-5">
+        <Carousel responsive={responsive}     
+>
         <div className="text-center ">
             <img
               src={certRolling}
