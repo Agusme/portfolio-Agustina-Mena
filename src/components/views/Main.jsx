@@ -3,8 +3,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import fotoperfil from "../../assets/fotoperfil.png";
 const Main = () => {
   return (
-    <div>
-      <Container fluid className="marginTop bg-main pb-5">
+    <div  id="main">
+      <Container fluid className="paddingTop bg-main pb-5">
         <Row className="d-flex align-items-center mt-5 pb-5">
           <Col className="p-2 px-5 mt-5 text-center" lg={7} md={6} sm={12}>
             <h1 className="fw-bold display-1 text-white">

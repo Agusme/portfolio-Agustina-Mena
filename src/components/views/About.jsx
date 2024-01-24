@@ -4,9 +4,9 @@ import about from "../../assets/about.jpeg";
 
 const About = () => {
   return (
-    <div className="bg-stack pt-3 text-white pb-5">
+    <div className=" bg-stack pt-3 text-white pb-5"  id="about">
       <Container>
-        <h1 className="text-center fw-bold text-white py-4">About me</h1>
+        <h1 className="text-center fw-bold text-white py-4 pt-5">About me</h1>
 
         <Row className="bg-glass p-5">
           <Col sm={12} md={6} lg={6}>

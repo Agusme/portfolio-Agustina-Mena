@@ -8,8 +8,8 @@ import paleta from "../../assets/proyectos/paleta.jpeg";
 
 const Projects = () => {
   return (
-    <div className="pb-5 pt-3 bg-main">
-      <h1 className="text-center fs-1 pb-1 fw-bold text-white mt-3">
+    <div className="pb-5 pt-3 bg-main"  id="projects">
+      <h1 className="text-center fs-1 pb-1 fw-bold text-white mt-3 pt-5">
         Projects
       </h1>
       <Container>

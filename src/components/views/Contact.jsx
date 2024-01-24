@@ -45,8 +45,8 @@ reset();
     setShowModal(false);
   };
   return (
-    <div className="bg-stack py-5 text-white">
-      <h1 className="text-center  fs-1 pb-3 fw-bold">Contact me </h1>
+    <div className="bg-stack py-5 text-white"  id="contact">
+      <h1 className="text-center  fs-1 pb-3 fw-bold pt-5">Contact me </h1>
       <Container className="bg-glass p-5">
         <Row>
           <Col lg={6} md={6} sm={12}>

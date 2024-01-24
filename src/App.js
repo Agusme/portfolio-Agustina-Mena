@@ -21,6 +21,7 @@ function App() {
       <StackMern />
       <Certifications/>
       <Contact />
+
       <Footer />
     </>
   );

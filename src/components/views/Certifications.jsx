@@ -28,7 +28,7 @@ const Certifications = () => {
     },
   };
   return (
-    <div className="bg-main p-5 text-white">
+    <div className="bg-main p-5 text-white"  id="certifications">
       <Container>
         <h1 className="text-center  fs-1 pb-3 fw-bold">Certifications </h1>
         <Carousel responsive={responsive} className="bg-glass py-5">
