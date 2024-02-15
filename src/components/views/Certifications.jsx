@@ -8,6 +8,7 @@ import certRolling from "../../assets/certificados/certRolling.jpg";
 import { Container } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useTranslation } from "react-i18next";
 const Certifications = () => {
   const responsive = {
     superLargeDesktop: {
@@ -27,10 +28,14 @@ const Certifications = () => {
       items: 1,
     },
   };
+
+  const {t} = useTranslation();
+
+
   return (
     <div className="bg-main p-5 text-white"  id="certifications">
       <Container>
-        <h1 className="text-center  fs-1 pb-3 fw-bold">Certifications </h1>
+        <h1 className="text-center  fs-1 pb-3 fw-bold">{t("certificationTittle")} </h1>
         <Carousel responsive={responsive} className="bg-glass py-5">
  
         <div className="text-center ">

@@ -5,12 +5,15 @@ import turismo from "../../assets/proyectos/turismo.jpeg";
 import veterinaria from "../../assets/proyectos/veterinaria.jpeg";
 import bmz from "../../assets/proyectos/bmz.jpeg";
 import paleta from "../../assets/proyectos/paleta.jpeg";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const {t} = useTranslation();
+
   return (
     <div className="pb-5 pt-3 bg-main"  id="projects">
-      <h1 className="text-center fs-1 pb-1 fw-bold text-white mt-3 pt-5">
-        Projects
+      <h1 className="text-center fs-1 pb-1 fw-bold text-white pt-5">
+      {t("projects")} 
       </h1>
       <Container>
         <Row>

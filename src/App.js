@@ -10,10 +10,12 @@ import StackMern from "./components/views/StackMern";
 import About from "./components/views/About";
 import Contact from "./components/views/Contact";
 import Certifications from "./components/views/Certifications";
+import LanguageSelector from "./components/language-selector";
 
 function App() {
   return (
     <>
+    <LanguageSelector/>
       <Navegation />
       <Main />
       <About />

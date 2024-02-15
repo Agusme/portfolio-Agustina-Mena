@@ -12,11 +12,17 @@ import figma from "../../assets/iconos/figma.svg";
 import visual from "../../assets/iconos/visual.svg";
 import react from "../../assets/iconos/react.svg";
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 const StackMern = () => {
+  const{t} = useTranslation();
+
   return (
+
+
     <div className="bg-stack py-5"  id="stack">
           <h1 className="text-center text-white fs-1 pb-3 fw-bold">
-        My Technology Stack        </h1>
+          {t("stack")} 
+</h1>
       <Container className="bg-glass pt-4">
     
         <Row >

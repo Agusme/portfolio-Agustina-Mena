@@ -1,37 +1,34 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import about from "../../assets/about.jpeg";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const {t} = useTranslation();
+
+  const {aboutme, about1, about2,about3, about4, about5} = t("aboutDescription");
+  
   return (
     <div className=" bg-stack pt-3 text-white pb-5"  id="about">
       <Container>
-        <h1 className="text-center fw-bold text-white py-4 pt-5">About me</h1>
+        <h1 className="text-center fw-bold text-white py-4 pt-5"> {aboutme} </h1>
 
         <Row className="bg-glass p-5">
           <Col sm={12} md={6} lg={6}>
             <h4 className="fw-semibold py-2">
-              Hi, I'm Agustina Mena, Fullstack Web Developer and
-              Psychopedagogue!{" "}
+             {about1}
             </h4>
             <p>
-              I'm passionate about creating websites, especially the design
-              part. I could spend a whole day coding and designing.
+             {about2}
             </p>
             <p>
-              I also strive to learn and apply new knowledge constantly, as I
-              believe that learning is essential to keep growing and developing,
-              both personally and professionally.
+              {about3}
             </p>
             <p>
-              With a strong background in psycho-pedagogy, I combine technical
-              skills with a deep understanding of human learning. My goal is to
-              create web experiences that are both visually engaging and
-              user-centred.
+             {about4}
             </p>
             <p>
-              Join me on this journey where technology meets creativity and
-              learning! Ready for new challenges and excited for the future!
+            {about5}
             </p>
           </Col>
           <Col

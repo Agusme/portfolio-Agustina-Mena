@@ -8,6 +8,7 @@ import {
 } from "../../helpers/validateForm";
 import { useForm } from "react-hook-form";
 import emailjs from 'emailjs-com';
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const { register, handleSubmit, errors, reset } = useForm();
@@ -44,24 +45,25 @@ reset();
   const handleCloseModal = () => {
     setShowModal(false);
   };
+
+  const{t} = useTranslation();
+  const{contactTittle, contact1, contact2, contact3, form1, form2, form3, submitContact}= t("pageContact")
+
   return (
     <div className="bg-stack py-5 text-white"  id="contact">
-      <h1 className="text-center  fs-1 pb-3 fw-bold pt-2">Contact me </h1>
+      <h1 className="text-center  fs-1 pb-3 fw-bold pt-2"> {contactTittle}
+ </h1>
       <Container className="bg-glass p-5">
         <Row>
           <Col lg={6} md={6} sm={12}>
             <h4 className="fw-semibold py-2">
-              Thank you for visiting my portfolio!
-            </h4>
+{contact1}            </h4>
 
             <p className="mt-3">
-              I am excited about the possibility of meeting and collaborating on
-              your professional projects.
+           {contact2}
             </p>
             <p>
-              If you are interested, you can contact me via the form provided or
-              use the alternative information - I look forward to the
-              opportunity to work with you!
+             {contact3}
             </p>
 
             <ul className="list-unstyled d-flex  d-flex mt-4">
@@ -112,8 +114,7 @@ reset();
             <Form onSubmit={handleSubmit(onSubmit)}>
               <Form.Group controlId="formName">
                 <Form.Label>
-                  Name or Company Name{" "}
-                  <span className="text-danger fw-bold">*</span>
+{form1}                  <span className="text-danger fw-bold">*</span>
                 </Form.Label>
                 <Form.Control
   type="text"
@@ -122,7 +123,6 @@ reset();
     required: "Please provide a valid name",
     validate: (value) => validateName(value) || "Invalid name",
   })}
-  placeholder="Write your Name"
   maxLength={30}
 />
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
@@ -132,7 +132,7 @@ reset();
               </Form.Group>
               <Form.Group controlId="formEmail">
                 <Form.Label className="pt-3">
-                  Email <span className="text-danger fw-bold">*</span>
+                  {form2} <span className="text-danger fw-bold">*</span>
                 </Form.Label>
                 <Form.Control
                   name="user_email"
@@ -142,7 +142,6 @@ reset();
                       validateEmail(value) || "Invalid email",
                   })}
                   type="text"
-                  placeholder="Write your email"
                   maxLength={30}
                 />
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
@@ -152,7 +151,7 @@ reset();
               </Form.Group>
               <Form.Group controlId="formMessage">
                 <Form.Label className="pt-3">
-                  Your Message <span className="text-danger fw-bold">*</span>
+                  {form3} <span className="text-danger fw-bold">*</span>
                 </Form.Label>
                 <Form.Control
                   name="message"
@@ -163,7 +162,6 @@ reset();
                   })}
                   as="textarea"
                   rows={4}
-                  placeholder="Write your message here"
                   maxLength={1000}
                   required
                 />
@@ -173,7 +171,7 @@ reset();
                 </Form.Control.Feedback>
               </Form.Group>
               <Button type="submit" variant="dark" className="mt-3">
-                Submit
+                {submitContact}
               </Button>
             </Form>
           </Col>

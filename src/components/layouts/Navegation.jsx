@@ -1,9 +1,13 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import { Link as ScrollLink } from 'react-scroll';
 
 
 const Navigation = () => {
+  const{t} = useTranslation();
+  const {projects, about, contact}= t("navbar")
+
   return (
     <>
       <Navbar expand="lg" bg="black" variant="dark" fixed="top" className="">
@@ -17,13 +21,13 @@ const Navigation = () => {
           <Navbar.Collapse id="navbarScroll" className="fw-bold">
             <Nav className="ms-auto" navbarScroll>
               <ScrollLink to="projects" smooth={true} duration={500} className='m-2 text-white text-decoration-none'>
-                <li className='linkhover fw-bold'>Projects</li>
+                <li className='linkhover fw-bold'>{projects}</li>
               </ScrollLink>
               <ScrollLink to="about" smooth={true} duration={500} className='m-2 text-white text-decoration-none'>
-              <li className='linkhover fw-bold'>About me</li>
+              <li className='linkhover fw-bold'>{about} </li>
               </ScrollLink>
               <ScrollLink to="contact" smooth={true} duration={500} className='m-2 text-white text-decoration-none'>
-              <li className='linkhover fw-bold'>Contact</li>
+              <li className='linkhover fw-bold'>{contact} </li>
               </ScrollLink>
             </Nav>
           </Navbar.Collapse>

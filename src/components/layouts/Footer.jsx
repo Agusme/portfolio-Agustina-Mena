@@ -1,9 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
+  const{t} = useTranslation();
+  const {projects, about, contact}= t("navbar")
+  const {pages, info, cel, social} = t("footerPage")
+ 
   return (
     <>
       <div
@@ -23,34 +28,34 @@ const Footer = () => {
             
             </Col>
             <Col lg={3} sm={12}>
-              <p className="fw-bold">Pages</p>
+              <p className="fw-bold">{pages}</p>
 
               <ul className="list-unstyled">
                 <ScrollLink to="projects" smooth={true} duration={500}>
-                <li>Projects </li>
+                <li>{projects} </li>
 
                 </ScrollLink>
                 <ScrollLink to="about" smooth={true} duration={500}>
-                <li>About me </li>
+                <li>{about} </li>
 
                 </ScrollLink>
                 <ScrollLink to="contact" smooth={true} duration={500}>
-                <li>Contact</li>
+                <li>{contact}</li>
                 </ScrollLink>{" "}
               </ul>
             </Col>
             <Col lg={3} sm={12}>
-              <p className="fw-bold">More information</p>
+              <p className="fw-bold">{info} </p>
 
               <ul className="list-unstyled">
-                <li>Celular: 3815633405</li>
+                <li>{cel} : 3815633405</li>
 
                 <li> agusmena60@gmail.com</li>
               </ul>
             </Col>
 
             <Col lg={3} sm={12}>
-              <p className="fw-bold">Social media</p>
+              <p className="fw-bold">{social} </p>
 
               <ul className="list-unstyled d-flex  d-flex justify-content-center">
                 <a

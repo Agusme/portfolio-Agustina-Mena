@@ -306,7 +306,15 @@ ul li:hover {
     }
   }
 }
+.custom-button {
+  background-color: transparent;
+  border: none; 
+  padding: 4px;
+}
 
+.custom-button.selected {
+  border-bottom: 1px solid #7d7979; 
+}
 .size-project {
   font-size: 10px;
 }
