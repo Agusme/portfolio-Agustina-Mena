@@ -48,7 +48,7 @@ const Footer = () => {
               <p className="fw-bold">{info} </p>
 
               <ul className="list-unstyled">
-                <li>{cel} : 3815633405</li>
+                <li>{cel} : +54 381 563 3405</li>
 
                 <li> agusmena60@gmail.com</li>
               </ul>
