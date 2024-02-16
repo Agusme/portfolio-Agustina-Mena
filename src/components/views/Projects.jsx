@@ -5,6 +5,7 @@ import turismo from "../../assets/proyectos/turismo.jpeg";
 import veterinaria from "../../assets/proyectos/veterinaria.jpeg";
 import bmz from "../../assets/proyectos/bmz.jpeg";
 import paleta from "../../assets/proyectos/paleta.jpeg";
+import juego from "../../assets/proyectos/juego.jpeg"
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
@@ -130,10 +131,36 @@ const Projects = () => {
                   <img
                     src={paleta}
                     alt="img colour pallete"
-                    className="img-fluid  img-projects"
+                    className="img-fluid rounded  img-projects"
                   />
+                                    <hr />
+
                   <p className="fw-semibold my-2 size-project">
                     HTML | CSS | BOOSTRAP | REACT | LOCALSTORAGE
+                  </p>
+                </Card.Body>
+              </Card>
+            </a>
+          </Col>
+          <Col lg={6} md={6} sm={12}>
+            <a
+              href="https://jugaconmigo.netlify.app/"
+              target="_blanck"
+              className="text-decoration-none"
+            >
+              <Card className="my-3 mx-5 bg-glass text-white text-center project-card">
+                <Card.Body>
+                  <Card.Title className="fw-semibold">
+
+Juga conmigo                  </Card.Title>
+                  <img
+                    src={juego}
+                    alt="project play"
+                    className="img-fluid rounded  img-projects"
+                  />
+                  <hr />
+                  <p className="fw-semibold my-2 size-project">
+                    HTML | CSS | BOOSTRAP | JAVASCRIPT
                   </p>
                 </Card.Body>
               </Card>
