@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./font.css"; // Asegúrate de que la ruta sea correcta
+import "./font.css";
 import "./App.css";
 import React from "react";
 import Navegation from "./components/layouts/Navegation";
@@ -15,15 +15,14 @@ import LanguageSelector from "./components/language-selector";
 function App() {
   return (
     <>
-    <LanguageSelector/>
+      <LanguageSelector />
       <Navegation />
       <Main />
       <About />
       <Projects />
       <StackMern />
-      <Certifications/>
+      <Certifications />
       <Contact />
-
       <Footer />
     </>
   );
