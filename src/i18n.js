@@ -60,7 +60,7 @@ returnObjects: true,
           description: {
             im: "I`m Agustina Mena",
             profession: " Fullstack Mern Web Developer | Psychopedagogue",
-            cv: "View CV",
+            cv: "View Resume",
           },
           navbar:{
             projects:"Projects",
