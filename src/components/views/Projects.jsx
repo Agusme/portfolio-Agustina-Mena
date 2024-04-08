@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
-import rollingMovies from "../../assets/proyectos/rollingMovies.jpg";
-import turismo from "../../assets/proyectos/turismo.jpeg";
-import veterinaria from "../../assets/proyectos/veterinaria.jpeg";
-import bmz from "../../assets/proyectos/bmz.jpeg";
+import rollingMovies from "../../assets/proyectos/rollingMovies.png";
+import turismo from "../../assets/proyectos/turismo.png";
+import veterinaria from "../../assets/proyectos/veterinaria.png";
+import bmz from "../../assets/proyectos/bmz.png";
 import paleta from "../../assets/proyectos/paleta.jpeg";
 import juego from "../../assets/proyectos/juego.jpeg";
 import { useTranslation } from "react-i18next";
@@ -71,7 +71,7 @@ const Projects = () => {
         <Row>
           <Col lg={6} md={6} sm={12}>
             <a
-              href="https://inmobiliaria-bmz-propiedades.netlify.app/"
+              href="https://bmzpropiedades.netlify.app/"
               target="_blank"
               className="text-decoration-none"
               rel="noopener noreferrer"
@@ -88,7 +88,7 @@ const Projects = () => {
                   />
                   <hr />
                   <p className="fw-semibold my-2 size-project">
-                    HTML | CSS | BOOSTRAP | In progress
+                   REACT.JS | MONGODB | NODE.JS | EXPRESS.JS
                   </p>
                 </Card.Body>
               </Card>
