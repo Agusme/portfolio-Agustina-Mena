@@ -3,6 +3,7 @@ import prof from "../../assets/certificados/prof.jpg";
 import certCodo from "../../assets/certificados/certCodo.jpg";
 import google from "../../assets/certificados/googlw.jpg";
 import alura from "../../assets/certificados/alura.jpg";
+import uxResearch from "../../assets/certificados/ux-research.png";
 
 import certRolling from "../../assets/certificados/certRolling.jpg";
 import { Container } from "react-bootstrap";
@@ -46,6 +47,15 @@ const Certifications = () => {
             />
             <p className="text-center fw-bold">Rolling Code</p>
             <p>Fullstack web programming</p>
+          </div>
+          <div className="text-center ">
+            <img
+              src={uxResearch}
+              alt="certificado Ux Reasearch"
+              className="img-fluid w-100 p-3"
+            />
+            <p className="text-center fw-bold">Codo a Codo</p>
+            <p>Ux Research</p>
           </div>
           <div className="text-center">
             <img
