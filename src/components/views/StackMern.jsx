@@ -2,15 +2,16 @@ import React from "react";
 import html5 from "../../assets/iconos/html5.svg";
 import css3 from "../../assets/iconos/css3.svg";
 import js from "../../assets/iconos/js.svg";
-import corelDraw from "../../assets/iconos/corelDraw.svg";
 import github from "../../assets/iconos/github.svg";
 import nodejs from "../../assets/iconos/nodejs.svg";
 import express from "../../assets/iconos/express.svg";
 import mongodb from "../../assets/iconos/mongodb.svg";
 import boostrap from "../../assets/iconos/boostrap.svg";
 import figma from "../../assets/iconos/figma.svg";
-import visual from "../../assets/iconos/visual.svg";
+import materialiu from "../../assets/iconos/materualui.svg"
 import react from "../../assets/iconos/react.svg";
+import corelDr from "../../assets/iconos/corelDr.svg";
+
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 const StackMern = () => {
@@ -100,13 +101,21 @@ const StackMern = () => {
 
           </Col>
           <Col lg={3} md={3} sm={6} className="text-center py-2">
-            <img src={visual} alt="Visual Studio Code Icon" className="img-fluid mx-2 icon-size" />
-            <p className="fw-semibold text-white pt-2">Visual Studio Code</p>
+            <img
+              src={materialiu}
+              alt="Materiaal iu"
+              className="img-fluid mx-2 icon-size"
+            />
+                        <p className="fw-semibold text-white pt-2">Material Ui</p>
 
           </Col>
           <Col lg={3} md={3} sm={6} className="text-center py-2">
-            <img src={corelDraw} alt="Corel Draw" className="img-fluid mx-2 icon-size" />
-            <p className="fw-semibold text-white pt-2">Corel Draw</p>
+            <img
+              src={corelDr}
+              alt="Materiaal iu"
+              className="img-fluid mx-2 icon-size rounded"
+            />
+                        <p className="fw-semibold text-white pt-2">Corel Draw</p>
 
           </Col>
         </Row>

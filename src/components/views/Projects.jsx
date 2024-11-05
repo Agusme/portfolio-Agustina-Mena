@@ -5,7 +5,7 @@ import turismo from "../../assets/proyectos/turismo.png";
 import veterinaria from "../../assets/proyectos/veterinaria.png";
 import bmz from "../../assets/proyectos/bmz.png";
 import paleta from "../../assets/proyectos/paleta.jpeg";
-import juego from "../../assets/proyectos/juego.jpeg";
+import proManage from "../../assets/proyectos/proManage.png";
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
@@ -149,22 +149,22 @@ const Projects = () => {
           </Col>
           <Col lg={6} md={6} sm={12}>
             <a
-              href="https://jugaconmigo.netlify.app/"
+              href="https://pro-manage-three.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-decoration-none"
             >
               <Card className="my-3 mx-5 bg-glass text-white text-center project-card">
                 <Card.Body>
-                  <Card.Title className="fw-semibold">Juga conmigo </Card.Title>
+                  <Card.Title className="fw-semibold">ProManage</Card.Title>
                   <img
-                    src={juego}
-                    alt="project play"
+                    src={proManage}
+                    alt="proManage"
                     className="img-fluid rounded  img-projects"
                   />
                   <hr />
                   <p className="fw-semibold my-2 size-project">
-                    HTML | CSS | BOOSTRAP | JAVASCRIPT
+                    REACT.JS | MATERIAL UI
                   </p>
                 </Card.Body>
               </Card>
