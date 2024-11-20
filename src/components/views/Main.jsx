@@ -18,7 +18,7 @@ const Main = () => {
             <p className="fw-bold text-white fs-1">{im} </p>
             <p className="text-white fw-semibold mt-2">
             {profession} </p>
-            <a href="https://docs.google.com/document/d/1RCa1EyWLO1yKGhSElCNYZ-aEBktdngDT/edit?usp=sharing&ouid=117867699484375193389&rtpof=true&sd=true" className="btn btn-light fw-bold mt-2" target="_blank" rel="noopener noreferrer">{cv} </a>
+            <a href="https://www.dropbox.com/scl/fi/e9jx7d7k8av6kyiyxg0hf/Agustina-mena-1.pdf?rlkey=va2tnu3si2tvrp1qetitry5l9&e=1&st=j8bcq4c7&dl=0" className="btn btn-light fw-bold mt-2" target="_blank" rel="noopener noreferrer">{cv} </a>
           </Col>
           <Col
             className="d-flex align-items-center justify-content-center my-5 pt-5"
