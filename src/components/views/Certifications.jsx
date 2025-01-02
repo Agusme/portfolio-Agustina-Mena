@@ -4,7 +4,7 @@ import certCodo from "../../assets/certificados/certCodo.jpg";
 import google from "../../assets/certificados/googlw.jpg";
 import alura from "../../assets/certificados/alura.jpg";
 import uxResearch from "../../assets/certificados/ux-research.png";
-
+import certBackend from "../../assets/certificados/cert-Backend.png"
 import certRolling from "../../assets/certificados/certRolling.jpg";
 import { Container } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
@@ -38,7 +38,15 @@ const Certifications = () => {
       <Container>
         <h1 className="text-center  fs-1 pb-3 fw-bold">{t("certificationTittle")} </h1>
         <Carousel responsive={responsive} className="bg-glass py-5">
- 
+        <div className="text-center ">
+            <img
+              src={certBackend}
+              alt="certificado Backend Rolling Code"
+              className="img-fluid w-100 p-3"
+            />
+            <p className="text-center fw-bold">Rolling Code</p>
+            <p>Backend database integration in web applications </p>
+          </div>
         <div className="text-center ">
             <img
               src={certRolling}
