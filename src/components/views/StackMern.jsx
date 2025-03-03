@@ -6,7 +6,7 @@ import github from "../../assets/iconos/github.svg";
 import nodejs from "../../assets/iconos/nodejs.svg";
 import express from "../../assets/iconos/express.svg";
 import mongodb from "../../assets/iconos/mongodb.svg";
-import boostrap from "../../assets/iconos/boostrap.svg";
+import bootstrap from "../../assets/iconos/boostrap.svg";
 import figma from "../../assets/iconos/figma.svg";
 import materialiu from "../../assets/iconos/materualui.svg";
 import react from "../../assets/iconos/react.svg";
@@ -65,8 +65,8 @@ const StackMern = () => {
             <p className="fw-semibold text-white pt-2">Figma</p>
           </Col>
           <Col lg={3} md={4} sm={6} xs={6} className="text-center">
-            <img src={boostrap} alt="Boostrap Icon" className="img-fluid icon-size" />
-            <p className="fw-semibold text-white pt-2">Boostrap</p>
+            <img src={bootstrap} alt="bootstrap Icon" className="img-fluid icon-size" />
+            <p className="fw-semibold text-white pt-2">Bootstrap</p>
           </Col>
           <Col lg={3} md={4} sm={6} xs={6} className="text-center">
             <img src={materialiu} alt="Material UI" className="img-fluid icon-size" />

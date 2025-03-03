@@ -4,7 +4,7 @@ import rollingMovies from "../../assets/proyectos/rollingMovies.png";
 import turismo from "../../assets/proyectos/turismo.png";
 import veterinaria from "../../assets/proyectos/veterinaria.png";
 import bmz from "../../assets/proyectos/bmz.png";
-import paleta from "../../assets/proyectos/paleta.jpeg";
+import guitar from "../../assets/proyectos/guitar.png";
 import proManage from "../../assets/proyectos/proManage.png";
 import { useTranslation } from "react-i18next";
 
@@ -37,7 +37,7 @@ const Projects = () => {
                   />
                   <hr />
                   <p className="fw-semibold size-project my-2">
-                    HTML | CSS | BOOSTRAP | JS VANILLA
+                    HTML | CSS | BOOTSTRAP | JS VANILLA
                   </p>
                 </Card.Body>
               </Card>
@@ -61,7 +61,7 @@ const Projects = () => {
                   />
                   <hr />
                   <p className="fw-semibold size-project my-2">
-                    HTML | CSS | BOOSTRAP
+                    HTML | CSS | BOOTSTRAP
                   </p>
                 </Card.Body>
               </Card>
@@ -113,7 +113,7 @@ const Projects = () => {
                   />
                   <hr />
                   <p className="fw-semibold my-2 size-project">
-                    HTML | CSS | BOOSTRAP | REACT | MONGO DB | NODE.JS
+                    HTML | CSS | BOOTSTRAP | REACT | MONGO DB | NODE.JS
                   </p>
                 </Card.Body>
               </Card>
@@ -123,7 +123,7 @@ const Projects = () => {
         <Row>
           <Col lg={6} md={6} sm={12}>
             <a
-              href="https://colourpallete.netlify.app/"
+              href="https://guitarla-practice.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-decoration-none"
@@ -131,18 +131,18 @@ const Projects = () => {
               <Card className="my-3 mx-5 bg-glass text-white text-center project-card">
                 <Card.Body>
                   <Card.Title className="fw-semibold">
-                    Colour Pallete
+                    GuitarLA 🎸
                   </Card.Title>
                   <img
-                    src={paleta}
-                    alt="img colour pallete"
+                    src={guitar}
+                    alt="img guitar"
                     className="img-fluid rounded  img-projects"
                   />
                   <hr />
 
                   <p className="fw-semibold my-2 size-project">
-                    HTML | CSS | BOOSTRAP | REACT | LOCALSTORAGE
-                  </p>
+  REACT | BOOTSTRAP  | LOCALSTORAGE
+</p>
                 </Card.Body>
               </Card>
             </a>
