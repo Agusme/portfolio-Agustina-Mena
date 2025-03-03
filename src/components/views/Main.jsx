@@ -18,7 +18,7 @@ const Main = () => {
             <p className="fw-bold text-white fs-1">{im} </p>
             <p className="text-white fw-semibold mt-2">
             {profession} </p>
-            <a href="https://www.canva.com/design/DAGYPEyTl_Q/ieT1cE7ca5KkBdEN1tXM8A/view?utm_content=DAGYPEyTl_Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd871a8a5d0" className="btn btn-light fw-bold mt-2" target="_blank" rel="noopener noreferrer">{cv} </a>
+            <a href="https://www.canva.com/design/DAGgIbNBCLw/Y2toKtjUXJkc5-t89XzNkg/edit?utm_content=DAGgIbNBCLw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">{cv} </a>
           </Col>
           <Col
             className="d-flex align-items-center justify-content-center my-5 pt-5"
