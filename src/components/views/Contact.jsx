@@ -7,17 +7,18 @@ import {
   validateName,
 } from "../../helpers/validateForm";
 import { useForm } from "react-hook-form";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 import { useTranslation } from "react-i18next";
+import { Slide } from "react-awesome-reveal";
 
 const Contact = () => {
   const { register, handleSubmit, errors, reset } = useForm();
-const [showModal, setShowModal] = React.useState(false)
+  const [showModal, setShowModal] = React.useState(false);
 
   const emailjsConfig = {
     serviceId: "service_72n9tya",
     templateId: "template_c4ds54h",
-    publicKey: "BDtEaJzGHui804FZE"
+    publicKey: "BDtEaJzGHui804FZE",
   };
 
   const onSubmit = async (data) => {
@@ -28,15 +29,15 @@ const [showModal, setShowModal] = React.useState(false)
         user_email: data.user_email,
         message: data.message,
       };
-     const response = await emailjs.send(
-  emailjsConfig.serviceId,
-  emailjsConfig.templateId,
-  emailData,
-  emailjsConfig.publicKey
-);
-console.log("correo enviado con exito: ", response);
-setShowModal(true);
-reset();
+      const response = await emailjs.send(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        emailData,
+        emailjsConfig.publicKey
+      );
+      console.log("correo enviado con exito: ", response);
+      setShowModal(true);
+      reset();
     } catch (error) {
       console.log("error al enviar el correo", error);
     }
@@ -46,25 +47,30 @@ reset();
     setShowModal(false);
   };
 
-  const{t} = useTranslation();
-  const{contactTittle, contact1, contact2, contact3, form1, form2, form3, submitContact}= t("pageContact")
+  const { t } = useTranslation();
+  const {
+    contactTittle,
+    contact1,
+    contact2,
+    contact3,
+    form1,
+    form2,
+    form3,
+    submitContact,
+  } = t("pageContact");
 
   return (
-    <div className="bg-stack py-5 text-white"  id="contact">
-      <h1 className="text-center  fs-1 pb-3 fw-bold pt-2"> {contactTittle}
- </h1>
+    <div className="bg-stack py-5 text-secondary" id="contact">
+      <h2 className="fw-bold text-green fs-1 text-center"> {contactTittle}</h2>
+      <Slide>
+
       <Container className="bg-glass p-5">
         <Row>
           <Col lg={6} md={6} sm={12}>
-            <h4 className="fw-semibold py-2">
-{contact1}            </h4>
+            <h4 className="fw-semibold py-2 fs-2">{contact1} </h4>
 
-            <p className="mt-3">
-           {contact2}
-            </p>
-            <p>
-             {contact3}
-            </p>
+            <p className="mt-3">{contact2}</p>
+            <p>{contact3}</p>
 
             <ul className="list-unstyled d-flex  d-flex mt-4">
               <a
@@ -74,7 +80,7 @@ reset();
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <li className="mx-2 icon">
+                <li className="mx-2  fs-1">
                   <FaGithub />
                 </li>
               </a>
@@ -84,7 +90,7 @@ reset();
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <li className="mx-2 icon">
+                <li className="mx-2 fs-1" >
                   <FaLinkedin />
                 </li>
               </a>
@@ -94,7 +100,7 @@ reset();
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <li className="mx-2 icon">
+                <li className="mx-2 fs-1">
                   <FaFacebook />
                 </li>
               </a>
@@ -104,7 +110,7 @@ reset();
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <li className="mx-2 icon">
+                <li className="mx-2 fs-1">
                   <FaInstagram />
                 </li>
               </a>
@@ -114,20 +120,20 @@ reset();
             <Form onSubmit={handleSubmit(onSubmit)}>
               <Form.Group controlId="formName">
                 <Form.Label>
-{form1}                  <span className="text-danger fw-bold">*</span>
+                  {form1} <span className="text-danger fw-bold">*</span>
                 </Form.Label>
                 <Form.Control
-  type="text"
-  name="user_name"
-  {...register("user_name", {
-    required: "Please provide a valid name",
-    validate: (value) => validateName(value) || "Invalid name",
-  })}
-  maxLength={30}
-/>
+                  type="text"
+                  name="user_name"
+                  {...register("user_name", {
+                    required: "Please provide a valid name",
+                    validate: (value) => validateName(value) || "Invalid name",
+                  })}
+                  maxLength={30}
+                />
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 <Form.Control.Feedback type="invalid">
-                {errors && errors.user_name && errors.user_name.message}
+                  {errors && errors.user_name && errors.user_name.message}
                 </Form.Control.Feedback>
               </Form.Group>
               <Form.Group controlId="formEmail">
@@ -136,7 +142,7 @@ reset();
                 </Form.Label>
                 <Form.Control
                   name="user_email"
-                  {...register("user_email",{
+                  {...register("user_email", {
                     required: "Please provide a valid email",
                     validate: (value) =>
                       validateEmail(value) || "Invalid email",
@@ -155,7 +161,7 @@ reset();
                 </Form.Label>
                 <Form.Control
                   name="message"
-                  {...register("message",{
+                  {...register("message", {
                     required: "Please provide a valid message",
                     validate: (value) =>
                       validateMessage(value) || "Invalid message",
@@ -177,12 +183,12 @@ reset();
           </Col>
         </Row>
       </Container>
+      </Slide>
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
           <Modal.Title>Query submitted</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-        Thank you for your inquiry!        </Modal.Body>
+        <Modal.Body>Thank you for your inquiry! </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCloseModal}>
             Cerrar
@@ -190,7 +196,6 @@ reset();
         </Modal.Footer>
       </Modal>
     </div>
-
   );
 };
 

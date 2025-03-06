@@ -1,33 +1,76 @@
-import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
-import { Link as ScrollLink } from 'react-scroll';
-
+import React from "react";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
+import { Link as ScrollLink } from "react-scroll";
+import flagEs from "../../assets/spain2.png";
+import flagEn from "../../assets/usa.png";
 
 const Navigation = () => {
-  const{t} = useTranslation();
-  const {projects, about, contact}= t("navbar")
+
+  const { i18n } = useTranslation();
+
+  const languages = [
+    { code: "en", flag: flagEn },
+    { code: "es", flag: flagEs },
+  ];
+
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const { t } = useTranslation();
+  const { projects, about, contact } = t("navbar");
 
   return (
     <>
-      <Navbar expand="lg" bg="black" variant="dark" fixed="top" className="">
+      <Navbar expand="lg"  fixed="top" bg="light" >
         <Container>
           <Navbar.Brand>
-            <ScrollLink to="main" smooth={true} duration={500}>
-              Agustina Mena
+            <ScrollLink to="main" smooth={true} duration={500} className="text-navbar text-secondary link-underline link-underline-opacity-0 underline-navbar ">
+               AM
             </ScrollLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll" className="fw-bold">
             <Nav className="ms-auto" navbarScroll>
-              <ScrollLink to="projects" smooth={true} duration={500} className='m-2 text-white text-decoration-none'>
-                <li className='linkhover fw-bold'>{projects}</li>
+              {languages.map((lng) => {
+                return (
+                  <button
+                    key={lng.code}
+                    onClick={() => changeLanguage(lng.code)}
+                    className={`custom-button  mx-4  me-auto`}
+                  >
+                    {lng.lang}
+                    <img src={lng.flag} alt={lng.code} className={`${
+                      lng.code === i18n.language ? "selected" : ""
+                    }  flag-size`} />
+                  </button>
+                );
+              })}
+              <ScrollLink
+                to="projects"
+                smooth={true}
+                duration={500}
+                className="m-4 text-navbar text-secondary text-decoration-none underline-navbar"
+              >
+                <li className=" fw-bold">{projects}</li>
               </ScrollLink>
-              <ScrollLink to="about" smooth={true} duration={500} className='m-2 text-white text-decoration-none'>
-              <li className='linkhover fw-bold'>{about} </li>
+              <ScrollLink
+                to="about"
+                smooth={true}
+                duration={500}
+                className="m-4 text-navbar text-secondary text-decoration-none underline-navbar yellow"
+              >
+                <li className=" fw-bold">{about} </li>
               </ScrollLink>
-              <ScrollLink to="contact" smooth={true} duration={500} className='m-2 text-white text-decoration-none'>
-              <li className='linkhover fw-bold'>{contact} </li>
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                className="m-4 text-navbar text-secondary text-decoration-none underline-navbar"
+              >
+                <li className=" fw-bold">{contact} </li>
               </ScrollLink>
             </Nav>
           </Navbar.Collapse>

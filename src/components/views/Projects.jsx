@@ -7,15 +7,18 @@ import bmz from "../../assets/proyectos/bmz.png";
 import guitar from "../../assets/proyectos/guitar.png";
 import proManage from "../../assets/proyectos/proManage.png";
 import { useTranslation } from "react-i18next";
+import { Fade } from "react-awesome-reveal";
 
 const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="pb-5 pt-3 bg-main" id="projects">
-      <h1 className="text-center fs-1 pb-1 fw-bold text-white pt-5">
+    <div className="pb-5 pt-5 bg-projects" id="projects">
+      <h1 className="text-center fs-1 pb-1 fw-bold text-secondary pt-5">
         {t("projects")}
       </h1>
+      <Fade>
+
       <Container>
         <Row>
           <Col lg={6} md={6} sm={12}>
@@ -25,7 +28,7 @@ const Projects = () => {
               className="text-decoration-none"
               rel="noopener noreferrer"
             >
-              <Card className="my-3 mx-5 bg-glass text-white text-center project-card">
+              <Card className="my-3 mx-5 bg-glass text-secondary text-center project-card border-0">
                 <Card.Body>
                   <Card.Title className="fw-semibold">
                     Rolling Movies +
@@ -50,8 +53,8 @@ const Projects = () => {
               className="text-decoration-none"
               rel="noopener noreferrer"
             >
-              <Card className="my-3 mx-5 bg-glass text-white text-center project-card">
-                <Card.Body>
+              <Card className="my-3 mx-5 bg-glass text-secondary text-center project-card border-0">
+              <Card.Body>
                   <Card.Title className="fw-semibold">Turismo NOA</Card.Title>
 
                   <img
@@ -76,8 +79,8 @@ const Projects = () => {
               className="text-decoration-none"
               rel="noopener noreferrer"
             >
-              <Card className="my-3 mx-5 bg-glass text-white text-center project-card">
-                <Card.Body>
+              <Card className="my-3 mx-5 bg-glass text-secondary text-center project-card border-0">
+              <Card.Body>
                   <Card.Title className="fw-semibold">
                     Inmobiliaria Bmz Propiedades
                   </Card.Title>
@@ -101,8 +104,8 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="text-decoration-none"
             >
-              <Card className="my-3 mx-5 bg-glass text-white text-center project-card">
-                <Card.Body>
+              <Card className="my-3 mx-5 bg-glass text-secondary text-center project-card border-0">
+              <Card.Body>
                   <Card.Title className="fw-semibold">
                     Veterinaria Rolling
                   </Card.Title>
@@ -128,8 +131,8 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="text-decoration-none"
             >
-              <Card className="my-3 mx-5 bg-glass text-white text-center project-card">
-                <Card.Body>
+              <Card className="my-3 mx-5 bg-glass text-secondary text-center project-card border-0">
+              <Card.Body>
                   <Card.Title className="fw-semibold">
                     GuitarLA 🎸
                   </Card.Title>
@@ -154,8 +157,8 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="text-decoration-none"
             >
-              <Card className="my-3 mx-5 bg-glass text-white text-center project-card">
-                <Card.Body>
+              <Card className="my-3 mx-5 bg-glass text-secondary text-center project-card border-0">
+              <Card.Body>
                   <Card.Title className="fw-semibold">ProManage</Card.Title>
                   <img
                     src={proManage}
@@ -172,6 +175,7 @@ const Projects = () => {
           </Col>
         </Row>
       </Container>
+      </Fade>
     </div>
   );
 };

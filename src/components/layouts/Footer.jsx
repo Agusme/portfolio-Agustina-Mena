@@ -13,7 +13,7 @@ const Footer = () => {
     <>
       <div
         expand="lg"
-        className="bg-black color-cemento  fw-semibold pt-3"
+        className=" fw-semibold pt-3 text-secondary text-navbar"
         fluid
       >
         <Container className="text-center">
@@ -65,7 +65,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <li className="mx-2 icon">
+                  <li className="mx-2 fs-1">
                     <FaGithub />
                   </li>
                 </a>
@@ -75,7 +75,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <li className="mx-2 icon">
+                  <li className="mx-2 fs-1">
                     <FaLinkedin />
                   </li>
                 </a>
@@ -85,7 +85,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <li className="mx-2 icon">
+                  <li className="mx-2 fs-1">
                     <FaFacebook />
                   </li>
                 </a>
@@ -95,7 +95,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <li className="mx-2 icon">
+                  <li className="mx-2 fs-1">
                     <FaInstagram />
                   </li>
                 </a>
@@ -104,7 +104,7 @@ const Footer = () => {
           </Row>
         </Container>
         <div className="pt-2 pb-1">
-          <p className="text-center">© 2024 All rights reserved</p>
+          <p className="text-center"> &copy;  2025 All rights reserved</p>
         </div>
       </div>
     </>

@@ -10,6 +10,7 @@ import { Container } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useTranslation } from "react-i18next";
+import { Fade } from "react-awesome-reveal";
 const Certifications = () => {
   const responsive = {
     superLargeDesktop: {
@@ -34,9 +35,10 @@ const Certifications = () => {
 
 
   return (
-    <div className="bg-main p-5 text-white"  id="certifications">
+    <div className="bg-projects p-5 text-secondary"   id="certifications">
+      <Fade>
       <Container>
-        <h1 className="text-center  fs-1 pb-3 fw-bold">{t("certificationTittle")} </h1>
+        <h2 className="fw-bold  fs-1 text-center">{t("certificationTittle")} </h2>
         <Carousel responsive={responsive} className="bg-glass py-5">
         <div className="text-center ">
             <img
@@ -106,6 +108,7 @@ const Certifications = () => {
 
  
       </Container>
+      </Fade>
     </div>
   );
 };
