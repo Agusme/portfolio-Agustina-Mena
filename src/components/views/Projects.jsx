@@ -18,7 +18,7 @@ const Projects = () => {
             {itemsProjects.map((item, index) => (
               <Col lg={4} md={6} sm={12} key={index}>
                 <a
-                  href="https://rollingmoviesplus.netlify.app/"
+                  href={item.url}
                   target="_blank"
                   className="text-decoration-none"
                   rel="noopener noreferrer"
