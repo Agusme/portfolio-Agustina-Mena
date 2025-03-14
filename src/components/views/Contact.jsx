@@ -63,7 +63,6 @@ const Contact = () => {
     <div className="bg-stack py-5 text-secondary" id="contact">
       <h2 className="fw-bold text-green fs-1 text-center"> {contactTittle}</h2>
       <Slide>
-
       <Container className="bg-glass p-5">
         <Row>
           <Col lg={6} md={6} sm={12}>

@@ -66,7 +66,9 @@ body {
 .bg-projects{
   background-color: #B6F8F7;
 }
-
+.img-projects{
+  object-fit: cover;
+}
 
 .img-projects:hover{
   filter: grayscale(100%);
