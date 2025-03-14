@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { Fade } from "react-awesome-reveal";
-import itemsProjects from "../../data/db";
+import { itemsProjects } from '../../data/db'; 
 
 const Projects = () => {
   const { t } = useTranslation();

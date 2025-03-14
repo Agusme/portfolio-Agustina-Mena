@@ -6,7 +6,7 @@ import guitar from "../assets/proyectos/guitar.png";
 import proManage from "../assets/proyectos/proManage.png";
 import appRestoran from "../assets/proyectos/app-restoran.png";
 
-const itemsProjects = [
+export  const itemsProjects = [
     {
       name: "Rolling Movies+",
       url: "https://rollingmoviesplus.netlify.app/",
@@ -50,6 +50,4 @@ const itemsProjects = [
       technologies: "REACT | VITE | TAILWINDCSS | CUSTOM HOOKS"
     }
   ];
-  
-  export default itemsProjects;
   

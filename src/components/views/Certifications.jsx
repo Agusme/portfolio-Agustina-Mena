@@ -40,67 +40,67 @@ const Certifications = () => {
       <Container>
         <h2 className="fw-bold  fs-1 text-center">{t("certificationTittle")} </h2>
         <Carousel responsive={responsive} className="bg-glass py-5">
-        <div className="text-center ">
+        <div className="text-center container">
             <img
               src={certBackend}
               alt="certificado Backend Rolling Code"
               className="img-fluid w-100 p-3"
             />
-            <p className="text-center fw-bold">Rolling Code</p>
+            <h6 className="text-center fw-bold">Rolling Code</h6>
             <p>Backend database integration in web applications </p>
           </div>
-        <div className="text-center ">
+        <div className="text-center container ">
             <img
               src={certRolling}
               alt="certificado Rolling Code"
               className="img-fluid w-100 p-3"
             />
-            <p className="text-center fw-bold">Rolling Code</p>
+            <h6 className="text-center fw-bold">Rolling Code</h6>
             <p>Fullstack web programming</p>
           </div>
-          <div className="text-center ">
+          <div className="text-center container">
             <img
               src={uxResearch}
               alt="certificado Ux Reasearch"
               className="img-fluid w-100 p-3"
             />
-            <p className="text-center fw-bold">Codo a Codo</p>
+            <h6 className="text-center fw-bold">Codo a Codo</h6>
             <p>Ux Research</p>
           </div>
-          <div className="text-center">
+          <div className="text-center container">
             <img
               src={prof}
               alt="certificado CertiProf"
               className="img-fluid w-100 p-3"
             />
-            <p className="text-center fw-bold">CertiProf</p>
+            <h6 className="text-center fw-bold">CertiProf</h6>
             <p>Scrum</p>
           </div>
-          <div className="text-center">
+          <div className="text-center container" >
             <img
               src={certCodo}
               alt="certificado Codo a codo"
               className="img-fluid w-100 p-3"
             />
-            <p className="text-center fw-bold">Codo a codo</p>
+            <h6 className="text-center fw-bold">Codo a codo</h6>
             <p>Initial programming</p>
           </div>
-          <div className="text-center">
+          <div className="text-center container">
             <img
               src={alura}
               alt="certificado alura"
               className="img-fluid w-100 p-3"
             />
-            <p className="text-center fw-bold">Alura Latam</p>
+            <h6 className="text-center fw-bold">Alura Latam</h6>
             <p>Javascript</p>
           </div>
-          <div className="text-center">
+          <div className="text-center container">
             <img
               src={google}
               alt="certificado Google Activate"
               className="img-fluid w-100 p-3 "
             />
-            <p className="text-center fw-bold">Google Activate</p>
+            <h6 className="text-center fw-bold">Google Activate</h6>
             <p>Introduction to web development</p>
           </div>
        
