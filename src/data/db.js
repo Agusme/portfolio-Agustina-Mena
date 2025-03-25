@@ -5,7 +5,7 @@ import bmz from "../assets/proyectos/bmz.png";
 import guitar from "../assets/proyectos/guitar.png";
 import proManage from "../assets/proyectos/proManage.png";
 import appRestoran from "../assets/proyectos/app-restoran.png";
-
+import contadorCalorias from "../assets/proyectos/contadorCalorias.png"
 export  const itemsProjects = [
     {
       name: "Rolling Movies+",
@@ -48,6 +48,12 @@ export  const itemsProjects = [
       url: "https://consumptionandtips.netlify.app/",
       img: appRestoran,
       technologies: "REACT | VITE | TAILWINDCSS | CUSTOM HOOKS"
+    },
+    {
+      name: "Contador de Calorias🍽️🏃🏽‍♀️",
+      url: "https://caloriestrackerbyagus.netlify.app/",
+      img: contadorCalorias,
+      technologies: "REACT | VITE | TAILWINDCSS | USEREDUCER"
     }
   ];
   
