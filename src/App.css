@@ -87,7 +87,10 @@ body {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
-
+.iconos-stack{
+  max-height: 100%;
+  object-fit: contain;
+}
 .project-card {
   position: relative;
   overflow: hidden;
