@@ -12,6 +12,7 @@ import materialiu from "../../assets/iconos/materualui.svg";
 import react from "../../assets/iconos/react.svg";
 import corelDr from "../../assets/iconos/corelDr.svg";
 import tailwind from "../../assets/iconos/TAILWIND.svg";
+import typescrypt from "../../assets/iconos/typescript.svg"
 import {  Slide } from 'react-awesome-reveal';
 
 import { Col, Container, Row } from "react-bootstrap";
@@ -21,8 +22,7 @@ const StackMern = () => {
   const { t } = useTranslation();
 
   return (
-    
-      
+  
     <div className="bg-stack py-5 " id="stack">
       <h2 className="fw-bold text-green fs-1 text-center">{t("stack")}</h2>
     <Slide>
@@ -34,7 +34,7 @@ const StackMern = () => {
           </Col>
           <Col lg={3} md={3} sm={6} xs={6} className="text-center">
             <img src={css3} alt="css3 icon" className="img-fluid icon-size" />
-            <p className="fw-semibold pt-2">Css3</p>
+            <p className="fw-semibold pt-2">CSS3</p>
           </Col>
           <Col lg={3} md={3} sm={6} xs={6} className="text-center">
             <img src={js} alt="javascript icon" className="img-fluid icon-size" />
@@ -83,6 +83,10 @@ const StackMern = () => {
           <Col lg={3} md={3} sm={6} xs={6} className="text-center">
             <img src={tailwind} alt="Tailwind CSS" className="img-fluid icon-size rounded" />
             <p className="fw-semibold pt-2">Tailwind</p>
+          </Col>
+          <Col lg={3} md={3} sm={6} xs={6} className="text-center">
+            <img src={typescrypt} alt="TypeScript" className="img-fluid icon-size rounded" />
+            <p className="fw-semibold pt-2">TypeScript</p>
           </Col>
         </Row>
       </Container>
