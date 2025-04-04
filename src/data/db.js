@@ -58,7 +58,7 @@ export  const itemsProjects = [
     },
     {
       name: "Control de Gastos💰",
-      url: "https://caloriestrackerbyagus.netlify.app/",
+      url: "https://control-gastos-agus.netlify.app/",
       img: controlGastos,
       technologies: "REACT | VITE | TAILWINDCSS | CONTEXT API"
     }
