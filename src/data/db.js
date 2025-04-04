@@ -5,7 +5,8 @@ import bmz from "../assets/proyectos/bmz.png";
 import guitar from "../assets/proyectos/guitar.png";
 import proManage from "../assets/proyectos/proManage.png";
 import appRestoran from "../assets/proyectos/app-restoran.png";
-import contadorCalorias from "../assets/proyectos/contadorCalorias.png"
+import contadorCalorias from "../assets/proyectos/contadorCalorias.png";
+import controlGastos from "../assets/proyectos/controlGastos.png";
 export  const itemsProjects = [
     {
       name: "Rolling Movies+",
@@ -50,10 +51,16 @@ export  const itemsProjects = [
       technologies: "REACT | VITE | TAILWINDCSS | CUSTOM HOOKS"
     },
     {
-      name: "Contador de Calorias🍽️🏃🏽‍♀️",
+      name: "Contador de Calorias🏃🏽‍♀️",
       url: "https://caloriestrackerbyagus.netlify.app/",
       img: contadorCalorias,
       technologies: "REACT | VITE | TAILWINDCSS | USEREDUCER"
+    },
+    {
+      name: "Control de Gastos💰",
+      url: "https://caloriestrackerbyagus.netlify.app/",
+      img: controlGastos,
+      technologies: "REACT | VITE | TAILWINDCSS | CONTEXT API"
     }
   ];
   
