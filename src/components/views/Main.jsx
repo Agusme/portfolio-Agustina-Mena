@@ -12,8 +12,7 @@ const Main = () => {
   return (
     <div id="main">
       <Fade>
-
-      <Container fluid className="text-secondary py-5">
+      <Container fluid className="text-green-dark py-5">
         <Row className="min-vh-100" >
           <Col
             className="d-flex flex-column justify-content-center align-items-center"

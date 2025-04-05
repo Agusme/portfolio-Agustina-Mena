@@ -29,7 +29,7 @@ const Certifications = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-projects p-5 text-secondary" id="certifications">
+    <div className="bg-projects p-5 text-green-dark" id="certifications">
       <Fade>
         <Container>
           <h2 className="fw-bold  fs-1 text-center">

@@ -29,7 +29,7 @@ const Projects = () => {
 
   return (
     <div className="pb-5 pt-5 bg-projects" id="projects">
-      <h1 className="text-center fs-1 pb-1 fw-bold text-secondary pt-5">
+      <h1 className="text-center fs-1 pb-1 fw-bold text-green-dark pt-5">
         {t("projects")}
       </h1>
       <Fade>
