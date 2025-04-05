@@ -92,9 +92,9 @@ i18n
             contactTittle: "Contact",
             contact1: " Thank you for visiting my portfolio!",
             contact2:
-              "   I am excited about the possibility of meeting and collaborating on your professional projects.",
+              "I am excited about the possibility of meeting and collaborating on your professional projects.",
             contact3:
-              "  If you are interested, you can contact me via the form provided or  use the alternative information - I look forward to the  opportunity to work with you!",
+              "If you are interested, you can contact me via the form provided or  use the alternative information - I look forward to the  opportunity to work with you!",
             form1: " Name or Company Name ",
             form2: "Email",
             form3: "Your message",

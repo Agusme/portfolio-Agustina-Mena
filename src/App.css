@@ -58,7 +58,36 @@ body {
   font-size: 30px;
   color: #ffffff;
 }
+/* Botones de paginación */
+.pagination .page-link {
+  background-color: #FFF8B0;   /* amarillo pastel */
+  color: #7D993B;              /* verde claro */
+  border: none;
+  margin: 0 4px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.pagination .page-link {
+  background-color: #78afaeb1;   /* color de fondo */
+  color: #4DA4A3;              /* color del texto */
+  border: none;
+  margin: 0 4px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
 
+/* Botón activo */
+.pagination .page-item.active .page-link {
+  background-color: #4DA4A3;   /* color más oscuro */
+  color: white;                /* texto blanco */
+  font-weight: bold;
+}
+
+/* Hover sobre cualquier botón */
+.pagination .page-link:hover {
+  background-color: #A0E2E1;
+  color: #000;
+}
 
 .bg-stack{
   background-color: #F8F3A1
@@ -122,7 +151,7 @@ body {
 }
 
 .selected {
-  border-bottom: 2px solid   #3acbbc; 
+  border-bottom: 2px solid #3acbbc; 
 }
 .size-project {
   font-size: 10px;
