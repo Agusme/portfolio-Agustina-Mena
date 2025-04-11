@@ -43,7 +43,7 @@ const Projects = () => {
                   className="text-decoration-none"
                   rel="noopener noreferrer"
                 >
-                  <Card className="bg-glass text-secondary text-center project-card border-0 h-100">
+                  <Card className="bg-glass text-green-dark text-center project-card border-0 h-100">
                     <Card.Body className="d-flex flex-column justify-content-center align-items-center">
                       <h6 className="fw-semibold">{item.name}</h6>
                       <img
