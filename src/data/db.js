@@ -35,7 +35,7 @@ import linkedin from "../assets/certificados/linkedin.png";
 export const itemsProjects = [
   {
     name: "Seguimiento de Turnos",
-    url: "https://unrivaled-brigadeiros-99698e.netlify.app/",
+    url: "https://veterinariaagus.netlify.app/",
     img: seguimientoTurnos,
     technologies: "REACT | ZUSTAND | TYPESCRIPT | REDUX DEVTOOLS ",
   },
