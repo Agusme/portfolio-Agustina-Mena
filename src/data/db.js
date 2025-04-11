@@ -7,6 +7,7 @@ import proManage from "../assets/proyectos/proManage.png";
 import appRestoran from "../assets/proyectos/app-restoran.png";
 import contadorCalorias from "../assets/proyectos/contadorCalorias.png";
 import controlGastos from "../assets/proyectos/controlGastos.png";
+import seguimientoTurnos from "../../src/assets/proyectos/seguimientoTurnos.png"
 import reactIcon from "../assets/iconos/react.svg";
 import html5 from "../assets/iconos/html5.svg";
 import css3 from "../assets/iconos/css3.svg";
@@ -29,7 +30,15 @@ import uxResearch from "../assets/certificados/ux-research.png";
 import certBackend from "../assets/certificados/cert-Backend.png";
 import certRolling from "../assets/certificados/certRolling.jpg";
 import linkedin from "../assets/certificados/linkedin.png";
+
+
 export const itemsProjects = [
+  {
+    name: "Seguimiento de Turnos",
+    url: "https://unrivaled-brigadeiros-99698e.netlify.app/",
+    img: seguimientoTurnos,
+    technologies: "REACT | ZUSTAND | TYPESCRIPT | REDUX DEVTOOLS ",
+  },
   {
     name: "Control de Gastos💰",
     url: "https://control-gastos-agus.netlify.app/",
@@ -81,6 +90,7 @@ export const itemsProjects = [
     img: rollingMovies,
     technologies: "HTML | CSS | BOOTSTRAP | JS VANILLA",
   },
+ 
 ];
 
 export const itemsStackMern = [
