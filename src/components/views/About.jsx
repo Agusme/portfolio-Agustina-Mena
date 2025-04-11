@@ -11,11 +11,10 @@ const About = () => {
     t("aboutDescription");
 
   return (
-    <div className=" bg-stack pt-3 pb-5  text-secondary " id="about">
+    <div className=" bg-stack pt-3 pb-5 text-green-dark" id="about">
       <Slide>
-
       <Container>
-        <h2 className="fw-bold text-green fs-1 text-center"> {aboutme} </h2>
+        <h2 className="fw-bold text-green-dark fs-1 text-center"> {aboutme} </h2>
         <Row className="bg-glass p-5 ">
           <Col sm={12} md={6} lg={6}>
             <h4 className="fw-semibold py-2">{about1}</h4>

@@ -29,20 +29,20 @@ const Certifications = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-projects p-5 text-green-dark" id="certifications">
+    <div className="bg-projects py-4 px-2 text-green-dark" id="certifications">
       <Fade>
         <Container>
-          <h2 className="fw-bold  fs-1 text-center">
+          <h2 className="fw-bold fs-1 text-center">
             {t("certificationTittle")}{" "}
           </h2>
-          <Carousel responsive={responsive} className="bg-glass py-5">
+          <Carousel responsive={responsive} className="pt-5 bg-glass">
             {itemsCertifaction.map((item) => (
-              <div className="text-center container">
-                <img
+              <div className="d-flex flex-column text-center gap-3">
+              <img
                   src={item.img}
                   alt={item.alt}
-                  className="img-fluid w-100 p-3"
-                />
+                  className="img-fluid img-fixed object-fit-cover mx-2"
+                  />
                 <h6 className="text-center fw-bold">{item.institution} </h6>
                 <p>{item.description} </p>
               </div>

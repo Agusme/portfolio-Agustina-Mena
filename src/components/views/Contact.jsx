@@ -60,8 +60,8 @@ const Contact = () => {
   } = t("pageContact");
 
   return (
-    <div className="bg-stack py-5 text-secondary" id="contact">
-      <h2 className="fw-bold text-green fs-1 text-center"> {contactTittle}</h2>
+    <div className="bg-stack py-5 text-green-dark" id="contact">
+      <h2 className="fw-bold fs-1 text-center"> {contactTittle}</h2>
       <Slide>
       <Container className="bg-glass p-5">
         <Row>

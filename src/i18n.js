@@ -25,13 +25,13 @@ i18n
           aboutDescription: {
             aboutme: "Sobre mi",
             about1:
-              "Hola, Soy Agustina Mena, Fullstack Web Developer y Psicopedagoga.",
+              "Soy Agustina Mena, Fullstack Web Developer con enfoque en Frontend 💅🏽",
             about2:
               "Me apasiona crear sitios web, sobre todo la parte del diseño. Podría pasarme un día entero codificando y diseñando.",
             about3:
               "También me esfuerzo por aprender y aplicar nuevos conocimientos constantemente, ya que creo que el aprendizaje es esencial para seguir creciendo y desarrollándose, tanto personal como profesionalmente.",
             about4:
-              "Con una sólida formación en psicopedagogía, combino las habilidades técnicas con un profundo conocimiento del aprendizaje humano. Mi objetivo es crear experiencias web visualmente atractivas, centradas en el usuario.",
+              "Mi objetivo es crear experiencias web visualmente atractivas, centradas en el usuario.",
             about5:
               "¡Estoy lista para enfrentarme a nuevos desafios y emocionada por lo que se viene!🚀",
           },
@@ -76,13 +76,13 @@ i18n
           aboutDescription: {
             aboutme: "About me",
             about1:
-              "Hi, I'm Agustina Mena, Fullstack Web Developer and Psychopedagogue.",
+              "I'm Agustina Mena, Fullstack Web Developer with focus on Frontend 💅🏽",
             about2:
-              "I'm passionate about creating websites, especially the design part. I could spend a whole day coding and designing.",
+              "I am passionate about creating websites, especially the design part. I could spend a whole day coding and designing.",
             about3:
-              "I also strive to learn and apply new knowledge constantly, as I believe that learning is essential to keep growing and developing, both personally and professionally.",
+              "I also strive to constantly learn and apply new knowledge, as I believe that learning is essential to continue growing and developing, both personally and professionally.",
             about4:
-              "With a strong background in psycho-pedagogy, I combine technical skills with a deep understanding of human learning. My goal is to create web experiences that are both visually engaging and user-centred.",
+              "My goal is to create visually appealing, user-centered web experiences.",
             about5:
               "I'm ready to take on new challenges and excited for what's ahead!🚀",
           },

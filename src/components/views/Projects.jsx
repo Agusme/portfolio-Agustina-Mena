@@ -29,12 +29,12 @@ const Projects = () => {
 
   return (
     <div className="pb-5 pt-5 bg-projects" id="projects">
-      <h1 className="text-center fs-1 pb-1 fw-bold text-green-dark pt-5">
+      <h1 className="text-center fs-1 pb-5 fw-bold text-green-dark pt-5">
         {t("projects")}
       </h1>
       <Fade>
         <Container>
-          <Row className="g-3">
+          <Row className="g-5">
             {currentProjects.map((item, index) => (
               <Col lg={4} md={6} sm={12} key={index}>
                 <a
@@ -43,7 +43,7 @@ const Projects = () => {
                   className="text-decoration-none"
                   rel="noopener noreferrer"
                 >
-                  <Card className="my-3 mx-5 bg-glass text-secondary text-center project-card border-0 h-100">
+                  <Card className="bg-glass text-secondary text-center project-card border-0 h-100">
                     <Card.Body className="d-flex flex-column justify-content-center align-items-center">
                       <h6 className="fw-semibold">{item.name}</h6>
                       <img
