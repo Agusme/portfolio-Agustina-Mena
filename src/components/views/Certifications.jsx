@@ -35,7 +35,7 @@ const Certifications = () => {
           <h2 className="fw-bold fs-1 text-center">
             {t("certificationTittle")}{" "}
           </h2>
-          <Carousel responsive={responsive} className="pt-5 bg-glass">
+          <Carousel customTransition="all .5" removeArrowOnDeviceType={["tablet", "mobile"]} infinite={true} responsive={responsive} className="pt-5 bg-glass">
             {itemsCertifaction.map((item) => (
               <div className="d-flex flex-column text-center gap-3">
               <img

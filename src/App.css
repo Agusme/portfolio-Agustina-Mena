@@ -160,12 +160,7 @@ body {
   height: 250px;      
 }
 
-/* Opcional: para hacerlo responsive */
-@media (max-width: 768px) {
-  .img-fixed {
-    height: 180px;       /* Altura menor en pantallas chicas */
-  }
-}
+
 
 @media (max-width: 575.98px) {
   .icon-size {
