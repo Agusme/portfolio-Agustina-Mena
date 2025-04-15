@@ -6,14 +6,12 @@ import flagEs from "../../assets/spain2.png";
 import flagEn from "../../assets/usa.png";
 
 const Navigation = () => {
-
   const { i18n } = useTranslation();
 
   const languages = [
     { code: "en", flag: flagEn },
     { code: "es", flag: flagEs },
   ];
-
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -24,11 +22,16 @@ const Navigation = () => {
 
   return (
     <>
-      <Navbar expand="lg"  fixed="top" bg="light" >
-        <Container>
+      <Navbar expand="lg" fixed="top" bg="light">
+        <Container className="pointer">
           <Navbar.Brand>
-            <ScrollLink to="main" smooth={true} duration={500} className="text-navbar text-secondary link-underline link-underline-opacity-0 underline-navbar ">
-               AM
+            <ScrollLink
+              to="main"
+              smooth={true}
+              duration={500}
+              className=" text-secondary link-underline link-underline-opacity-0 underline-navbar "
+            >
+              AM
             </ScrollLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -42,9 +45,13 @@ const Navigation = () => {
                     className={`custom-button  mx-4  me-auto`}
                   >
                     {lng.lang}
-                    <img src={lng.flag} alt={lng.code} className={`${
-                      lng.code === i18n.language ? "selected" : ""
-                    }  flag-size`} />
+                    <img
+                      src={lng.flag}
+                      alt={lng.code}
+                      className={`${
+                        lng.code === i18n.language ? "selected" : ""
+                      }  flag-size`}
+                    />
                   </button>
                 );
               })}
@@ -52,7 +59,7 @@ const Navigation = () => {
                 to="projects"
                 smooth={true}
                 duration={500}
-                className="m-4 text-navbar text-secondary text-decoration-none underline-navbar"
+                className="m-4  text-secondary text-decoration-none underline-navbar"
               >
                 <li className=" fw-bold">{projects}</li>
               </ScrollLink>
@@ -60,7 +67,7 @@ const Navigation = () => {
                 to="about"
                 smooth={true}
                 duration={500}
-                className="m-4 text-navbar text-secondary text-decoration-none underline-navbar yellow"
+                className="m-4  text-secondary text-decoration-none underline-navbar yellow"
               >
                 <li className=" fw-bold">{about} </li>
               </ScrollLink>
@@ -68,7 +75,7 @@ const Navigation = () => {
                 to="contact"
                 smooth={true}
                 duration={500}
-                className="m-4 text-navbar text-secondary text-decoration-none underline-navbar"
+                className="m-4  text-secondary text-decoration-none underline-navbar"
               >
                 <li className=" fw-bold">{contact} </li>
               </ScrollLink>

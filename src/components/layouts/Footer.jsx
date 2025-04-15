@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <>
       <div
-        expand="lg"
-        className=" fw-semibold pt-3 text-secondary text-navbar"
+
+        className="pointer fw-semibold py-4 text-secondary"
         fluid
       >
         <Container className="text-center">
@@ -103,7 +103,7 @@ const Footer = () => {
             </Col>
           </Row>
         </Container>
-        <div className="pt-2 pb-1">
+        <div className="pt-4 pb-1">
           <p className="text-center"> &copy;  2025 All rights reserved</p>
         </div>
       </div>
