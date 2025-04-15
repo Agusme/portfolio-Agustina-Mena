@@ -7,7 +7,6 @@ import flagEn from "../../assets/usa.png";
 
 const Navigation = () => {
   const { i18n } = useTranslation();
-
   const languages = [
     { code: "en", flag: flagEn },
     { code: "es", flag: flagEs },
@@ -29,7 +28,7 @@ const Navigation = () => {
               to="main"
               smooth={true}
               duration={500}
-              className=" text-secondary link-underline link-underline-opacity-0 underline-navbar "
+              className="text-secondary link-underline link-underline-opacity-0 underline-navbar "
             >
               AM
             </ScrollLink>
