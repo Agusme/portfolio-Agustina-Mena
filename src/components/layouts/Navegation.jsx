@@ -19,6 +19,8 @@ const Navigation = () => {
   const { t } = useTranslation();
   const { projects, about, contact } = t("navbar");
 
+
+  
   return (
     <>
       <Navbar expand="lg" fixed="top" bg="light">
@@ -36,7 +38,31 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll" className="fw-bold">
             <Nav className="ms-auto" navbarScroll>
-              {languages.map((lng) => {
+              <ScrollLink
+                to="about"
+                smooth={true}
+                duration={500}
+                className="m-4  text-secondary text-decoration-none underline-navbar yellow"
+              >
+                <li className=" fw-bold">{about} </li>
+              </ScrollLink>
+              <ScrollLink
+                to="projects"
+                smooth={true}
+                duration={500}
+                className="m-4  text-secondary text-decoration-none underline-navbar"
+              >
+                <li className=" fw-bold">{projects}</li>
+              </ScrollLink>
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                className="m-4  text-secondary text-decoration-none underline-navbar"
+              >
+                <li className=" fw-bold">{contact} </li>
+              </ScrollLink>
+                  {languages.map((lng) => {
                 return (
                   <button
                     key={lng.code}
@@ -54,30 +80,6 @@ const Navigation = () => {
                   </button>
                 );
               })}
-              <ScrollLink
-                to="projects"
-                smooth={true}
-                duration={500}
-                className="m-4  text-secondary text-decoration-none underline-navbar"
-              >
-                <li className=" fw-bold">{projects}</li>
-              </ScrollLink>
-              <ScrollLink
-                to="about"
-                smooth={true}
-                duration={500}
-                className="m-4  text-secondary text-decoration-none underline-navbar yellow"
-              >
-                <li className=" fw-bold">{about} </li>
-              </ScrollLink>
-              <ScrollLink
-                to="contact"
-                smooth={true}
-                duration={500}
-                className="m-4  text-secondary text-decoration-none underline-navbar"
-              >
-                <li className=" fw-bold">{contact} </li>
-              </ScrollLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
