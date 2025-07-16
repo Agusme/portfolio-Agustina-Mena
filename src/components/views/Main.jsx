@@ -23,7 +23,7 @@ const Main = () => {
             <h2 className="fw-bold text-green fs-1">{im} </h2>
             <h1 className="fw-semibold lead">{profession} </h1>
             <a
-              href="https://www.canva.com/design/DAGgIbNBCLw/wJOMVsowGH78tUccmbPopg/view?utm_content=DAGgIbNBCLw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7fa68bfac6"
+              href="https://www.canva.com/design/DAGtVEVC6bI/Yf9HQk4fKsAi4S4yhifPbg/view?utm_content=DAGtVEVC6bI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha9be2f1b5a"
               target="_blank"
               rel="noreferrer"
               className="btn btn-secondary"
