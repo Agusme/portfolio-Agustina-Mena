@@ -34,6 +34,23 @@ import linkedin from "../assets/certificados/linkedin.png";
 
 export const itemsProjects = [
   {
+    name: "Inmobiliaria Bmz Propiedades",
+    url: "https://bmzpropiedades.netlify.app/",
+    img: bmz,
+    technologies: "REACT.JS | MONGODB | NODE.JS | EXPRESS.JS",
+  },{
+    name: "Veterinaria Rolling",
+    url: "https://veterinariarolling.netlify.app/",
+    img: veterinaria,
+    technologies: "BOOTSTRAP | REACT | MONGO DB | NODE.JS | EXPRESS.JS",
+  },
+  {
+    name: "Rolling Movies+",
+    url: "https://rollingmoviesplus.netlify.app/",
+    img: rollingMovies,
+    technologies: "HTML | CSS | BOOTSTRAP | JS VANILLA",
+  },
+  {
     name: "Seguimiento de Turnos",
     url: "https://veterinariaagus.netlify.app/",
     img: seguimientoTurnos,
@@ -67,28 +84,12 @@ export const itemsProjects = [
     url: "https://guitarla-practice.netlify.app/",
     img: guitar,
     technologies: "REACT | BOOTSTRAP | LOCALSTORAGE",
-  }, {
-    name: "Veterinaria Rolling",
-    url: "https://veterinariarolling.netlify.app/",
-    img: veterinaria,
-    technologies: "BOOTSTRAP | REACT | MONGO DB | NODE.JS | EXPRESS.JS",
-  }, {
-    name: "Inmobiliaria Bmz Propiedades",
-    url: "https://bmzpropiedades.netlify.app/",
-    img: bmz,
-    technologies: "REACT.JS | MONGODB | NODE.JS | EXPRESS.JS",
-  },
+  }, 
   {
     name: "Turismo NOA",
     url: "https://turismonoa2023.netlify.app/",
     img: turismo,
     technologies: "HTML | CSS | BOOTSTRAP",
-  },
-  {
-    name: "Rolling Movies+",
-    url: "https://rollingmoviesplus.netlify.app/",
-    img: rollingMovies,
-    technologies: "HTML | CSS | BOOTSTRAP | JS VANILLA",
   },
  
 ];
