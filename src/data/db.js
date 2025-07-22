@@ -2,6 +2,7 @@ import rollingMovies from "../assets/proyectos/rollingMovies.png";
 import turismo from "../assets/proyectos/turismo.png";
 import veterinaria from "../assets/proyectos/veterinaria.png";
 import bmz from "../assets/proyectos/bmz.png";
+import bmzV2 from "../assets/proyectos/bmzV2.png";
 import guitar from "../assets/proyectos/guitar.png";
 import proManage from "../assets/proyectos/proManage.png";
 import appRestoran from "../assets/proyectos/app-restoran.png";
@@ -33,6 +34,12 @@ import linkedin from "../assets/certificados/linkedin.png";
 
 
 export const itemsProjects = [
+  {
+    name: "Inmobiliaria Bmz Propiedades v2",
+    url: "https://inmobiliaria-bmzpropiedades.vercel.app/",
+    img: bmzV2,
+    technologies: "REACT.JS | TYPESCRIPT | TAILWIND.CSS",
+  },
   {
     name: "Inmobiliaria Bmz Propiedades",
     url: "https://bmzpropiedades.netlify.app/",
