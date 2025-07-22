@@ -35,8 +35,8 @@ const Projects = () => {
       <Fade>
         <Container>
           <Row className="g-2">
-            {currentProjects.map((item, index) => (
-              <Col lg={4} md={6} sm={12} key={index}>
+            {currentProjects.map((item) => (
+              <Col lg={4} md={6} sm={12} key={item.name}>
                 <a
                   href={item.url}
                   target="_blank"
