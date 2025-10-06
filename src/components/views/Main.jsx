@@ -23,7 +23,7 @@ const Main = () => {
             <h2 className="fw-bold text-green fs-1">{im} </h2>
             <h1 className="fw-semibold lead">{profession} </h1>
             <a
-              href="https://drive.google.com/file/d/1Aq3JU78AanK46ULoa6q4ARB2GspLUUhI/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Qd-obU7ANqzr6cl_NrbgnfqltYNmjqyj/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="btn btn-secondary"
