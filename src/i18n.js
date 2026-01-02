@@ -23,17 +23,17 @@ i18n
             about: "Sobre mi",
           },
           aboutDescription: {
-            aboutme: "Sobre mi",
+            aboutme: "Sobre mí",
             about1:
-              "Soy Agustina Mena, Fullstack Web Developer con enfoque en Frontend 💅🏽",
+              "Soy Agustina Mena, Desarrolladora Full Stack con foco en Frontend 💅🏽",
             about2:
-              "Me apasiona crear sitios web, sobre todo la parte del diseño. Podría pasarme un día entero codificando y diseñando.",
+              "Especializada en React, trabajo con foco en la experiencia de usuario, el orden del código y la construcción de interfaces claras y funcionales.",
             about3:
-              "También me esfuerzo por aprender y aplicar nuevos conocimientos constantemente, ya que creo que el aprendizaje es esencial para seguir creciendo y desarrollándose, tanto personal como profesionalmente.",
+              "Tengo experiencia integrando frontend con backend y trabajando en entornos reales de desarrollo junto a equipos colaborativos.",
             about4:
-              "Mi objetivo es crear experiencias web visualmente atractivas, centradas en el usuario.",
+              "Me interesa participar en proyectos bien pensados, donde pueda aportar valor y seguir creciendo como Frontend Developer.",
             about5:
-              "¡Estoy lista para enfrentarme a nuevos desafios y emocionada por lo que se viene!🚀",
+              "Actualmente busco nuevas oportunidades para continuar desarrollándome profesionalmente en el área de Frontend.",
           },
           projects: "Proyectos",
           stack: "Mi Stack Tecnológico",
@@ -74,17 +74,17 @@ i18n
             about: "About me",
           },
           aboutDescription: {
-            aboutme: "About me",
+            aboutme: "About Me",
             about1:
-              "I'm Agustina Mena, Fullstack Web Developer with focus on Frontend 💅🏽",
+              "I’m Agustina Mena, a Full Stack Developer with a strong focus on Frontend 💅🏽",
             about2:
-              "I am passionate about creating websites, especially the design part. I could spend a whole day coding and designing.",
+              "Specialized in React, I focus on user experience, clean and maintainable code, and building clear, functional interfaces.",
             about3:
-              "I also strive to constantly learn and apply new knowledge, as I believe that learning is essential to continue growing and developing, both personally and professionally.",
+              "I have experience integrating frontend with backend services and working in real development environments within collaborative teams.",
             about4:
-              "My goal is to create visually appealing, user-centered web experiences.",
+              "I’m interested in working on well-designed projects where I can contribute value and continue growing as a Frontend Developer.",
             about5:
-              "I'm ready to take on new challenges and excited for what's ahead!🚀",
+              "I’m currently open to new opportunities to further develop my career in Frontend development.",
           },
           projects: "Projects",
           stack: "My Technology Stack",
