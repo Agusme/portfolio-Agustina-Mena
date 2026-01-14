@@ -23,7 +23,7 @@ const Main = () => {
             <h2 className="fw-bold text-green fs-1">{im} </h2>
             <h1 className="fw-semibold lead">{profession} </h1>
             <a
-              href="https://drive.google.com/file/d/1Qd-obU7ANqzr6cl_NrbgnfqltYNmjqyj/view?usp=sharing"
+              href="https://www.canva.com/design/DAG-a2nwXeQ/OUz-bNXt97VYHxDzXeINqw/view?utm_content=DAG-a2nwXeQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9f72b5d894"
               target="_blank"
               rel="noreferrer"
               className="btn btn-secondary"
@@ -39,8 +39,9 @@ const Main = () => {
             <div className="d-flex justify-content-center align-items-center">
             <img
               src={fotoper}
-              alt="fotoper"
+              alt="Agustina Mena - Full Stack Frontend Developer"
               className="d-flex justify-content-center img-fluid w-50"
+              loading="lazy"
             />
 
             </div>

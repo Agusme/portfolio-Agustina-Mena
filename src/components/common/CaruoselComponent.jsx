@@ -43,6 +43,7 @@ export default function CarouselComponent({ title, items }) {
                   src={item.img}
                   alt={item.alt}
                   className="img-fluid img-fixed object-fit-cover"
+                  loading="lazy"
                 />
                 <h6 className="text-center fw-bold">{item.institution}</h6>
                 <p>{item.description}</p>

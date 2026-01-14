@@ -8,7 +8,7 @@ import proManage from "../assets/proyectos/proManage.png";
 import appRestoran from "../assets/proyectos/app-restoran.png";
 import contadorCalorias from "../assets/proyectos/contadorCalorias.png";
 import controlGastos from "../assets/proyectos/controlGastos.png";
-import seguimientoTurnos from "../../src/assets/proyectos/seguimientoTurnos.png"
+import seguimientoTurnos from "../assets/proyectos/seguimientoTurnos.png"
 import reactIcon from "../assets/iconos/react.svg";
 import html5 from "../assets/iconos/html5.svg";
 import css3 from "../assets/iconos/css3.svg";
@@ -118,7 +118,7 @@ export const itemsStackMern = [
   { nameSkill: "TypeScript", imgIcon: typescrypt, alt: "TypeScript logo" },
 ];
 
-export const itemsCertifaction =[
+export const itemsCertification = [
   {
     img: certBackend,
     alt: "Certificado Backend Rolling Code",

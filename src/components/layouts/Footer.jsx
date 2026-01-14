@@ -5,9 +5,9 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
-  const{t} = useTranslation();
-  const {projects, about, contact}= t("navbar")
-  const {pages, info, cel, social} = t("footerPage")
+  const { t } = useTranslation();
+  const { projects, about, contact } = t("navbar");
+  const { pages, info, cel, social } = t("footerPage");
  
   return (
     <>
@@ -57,7 +57,7 @@ const Footer = () => {
             <Col lg={3} sm={12}>
               <p className="fw-bold">{social} </p>
 
-              <ul className="list-unstyled d-flex  d-flex justify-content-center">
+              <ul className="list-unstyled d-flex justify-content-center">
                 <a
                   href="https://github.com/Agusme"
                   className="text-decoration-none"

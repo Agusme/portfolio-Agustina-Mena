@@ -5,7 +5,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: true,
+    debug: process.env.NODE_ENV === "development",
     fallbackLng: "en",
     returnObjects: true,
     resources: {
@@ -57,6 +57,11 @@ i18n
             cel: "Celular",
             social: "Redes Sociales",
           },
+          modal: {
+            title: "Consulta enviada",
+            body: "¡Gracias por tu consulta!",
+            close: "Cerrar",
+          },
         },
       },
       en: {
@@ -106,6 +111,11 @@ i18n
             info: "More Information",
             cel: "Phone",
             social: "Social media",
+          },
+          modal: {
+            title: "Query submitted",
+            body: "Thank you for your inquiry!",
+            close: "Close",
           },
         },
       },

@@ -18,9 +18,9 @@ const Contact = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   const emailjsConfig = {
-    serviceId: "service_72n9tya",
-    templateId: "template_c4ds54h",
-    publicKey: "BDtEaJzGHui804FZE",
+    serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID || "service_72n9tya",
+    templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "template_c4ds54h",
+    publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "BDtEaJzGHui804FZE",
   };
 
   const onSubmit = async (data) => {
@@ -41,7 +41,8 @@ const Contact = () => {
       setShowModal(true);
       reset();
     } catch (error) {
-      console.log("error al enviar el correo", error);
+      console.error("error al enviar el correo", error);
+      // TODO: Show error message to user
     }
   };
 
@@ -60,6 +61,7 @@ const Contact = () => {
     form3,
     submitContact,
   } = t("pageContact");
+  const { title: modalTitle, body: modalBody, close: modalClose } = t("modal");
 
   const context = (
     <Container className="bg-glass p-5">
@@ -187,12 +189,12 @@ const Contact = () => {
       {!isMobile ? <Slide duration={500}>{context}</Slide> : context}
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
-          <Modal.Title>Query submitted</Modal.Title>
+          <Modal.Title>{modalTitle}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Thank you for your inquiry! </Modal.Body>
+        <Modal.Body>{modalBody}</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCloseModal}>
-            Cerrar
+            {modalClose}
           </Button>
         </Modal.Footer>
       </Modal>

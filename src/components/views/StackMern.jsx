@@ -8,7 +8,7 @@ const StackMern = () => {
   const { t } = useTranslation();
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
-  const context =(
+  const context = (
     <Container className="bg-glass py-4">
     <Row className="justify-content-start text-center">
       {itemsStackMern.map((item) => (
@@ -28,6 +28,7 @@ const StackMern = () => {
               src={item.imgIcon}
               alt={item.alt}
               className="img-fluid iconos-stack"
+              loading="lazy"
             />
           </div>
           <p className="fw-semibold pt-2 mb-0">{item.nameSkill}</p>
@@ -39,11 +40,11 @@ const StackMern = () => {
   return (
     <div className="bg-stack py-5 " id="stack">
       <h2 className="fw-bold text-green fs-1 text-center">{t("stack")}</h2>
-  {!isMobile ? (<Slide>
-        {context}
-     </Slide>): (
-      context
-     )}
+      {!isMobile ? (
+        <Slide>{context}</Slide>
+      ) : (
+        context
+      )}
     </div>
   );
 };

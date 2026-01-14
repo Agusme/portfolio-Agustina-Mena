@@ -68,11 +68,12 @@ const Navigation = () => {
                     key={lng.code}
                     onClick={() => changeLanguage(lng.code)}
                     className={`custom-button  mx-4  me-auto`}
+                    aria-label={`Change language to ${lng.code === "en" ? "English" : "Spanish"}`}
                   >
                     {lng.lang}
                     <img
                       src={lng.flag}
-                      alt={lng.code}
+                      alt={`${lng.code === "en" ? "English" : "Spanish"} flag`}
                       className={`${
                         lng.code === i18n.language ? "selected" : ""
                       }  flag-size`}

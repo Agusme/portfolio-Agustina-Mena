@@ -20,6 +20,7 @@ El portafolio incluye una variedad de proyectos, tanto frontend como backend, qu
 
    ```bash
    git clone https://github.com/Agusme/portfolio.git
+   ```
 
 2. **Navega a la carpeta del proyecto**:
 
@@ -29,11 +30,13 @@ El portafolio incluye una variedad de proyectos, tanto frontend como backend, qu
 
    ```bash
    npm install
-4. **Inicia el servidor de desarrollo:**:
+4. **Inicia el servidor de desarrollo**:
 
    ```bash
-    npm run dev
-El proyecto estará disponible en http://localhost:3000.
+   npm start
+   ```
+
+   El proyecto estará disponible en http://localhost:3000.
 
 
 ## **Tecnologías utilizadas**
