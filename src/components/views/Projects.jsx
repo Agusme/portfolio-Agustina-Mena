@@ -53,7 +53,7 @@ const Projects = () => {
             customTransition="all .5s"
             infinite
             responsive={responsive}
-            className="pt-4 bg-glass"
+            className="pt-4"
           >
             {itemsProjects.map((item) => (
               <div key={item.name} className="px-2">
