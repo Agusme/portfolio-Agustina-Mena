@@ -104,7 +104,7 @@ const Footer = () => {
           </Row>
         </Container>
         <div className="pt-4 pb-1">
-          <p className="text-center"> &copy;  2025 All rights reserved</p>
+          <p className="text-center"> &copy;  2026 All rights reserved</p>
         </div>
       </div>
     </>
