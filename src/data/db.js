@@ -39,64 +39,113 @@ export const itemsProjects = [
     url: "https://inmobiliaria-bmzpropiedades.vercel.app/",
     img: bmzV2,
     technologies: "REACT.JS | TYPESCRIPT | TAILWIND.CSS",
+    descripcion: {
+      es: "Sitio web inmobiliario moderno con filtros avanzados y diseño responsivo.",
+      en: "Modern real estate website with advanced filters and responsive design."
+    },
+    github: "https://github.com/Agusme/bmz-inmobiliaria-v2"
   },
   {
     name: "Inmobiliaria Bmz Propiedades",
     url: "https://bmzpropiedades.netlify.app/",
     img: bmz,
     technologies: "REACT.JS | MONGODB | NODE.JS | EXPRESS.JS",
+    descripcion: {
+      es: "Plataforma para gestión de propiedades y contacto con clientes.",
+      en: "Platform for property management and client contact."
+    },
+    github: "https://github.com/Agusme/inmobiliaria"
   },{
     name: "Veterinaria Rolling",
     url: "https://veterinariarolling.netlify.app/",
     img: veterinaria,
     technologies: "BOOTSTRAP | REACT | MONGO DB | NODE.JS | EXPRESS.JS",
+    descripcion: {
+      es: "Sistema integral para turnos y gestión veterinaria.",
+      en: "Comprehensive system for appointments and veterinary management."
+    },
+    github: "https://github.com/maxigiordani/ProyectoVeterinaria"
   },
   {
     name: "Rolling Movies+",
     url: "https://rollingmoviesplus.netlify.app/",
     img: rollingMovies,
     technologies: "HTML | CSS | BOOTSTRAP | JS VANILLA",
+    descripcion: {
+      es: "Catálogo de películas con búsqueda y detalles.",
+      en: "Movie catalog with search and details."
+    },
+    github: "https://github.com/Agusme/rollingMovies-"
   },
   {
     name: "Seguimiento de Turnos",
     url: "https://veterinariaagus.netlify.app/",
     img: seguimientoTurnos,
     technologies: "REACT | ZUSTAND | TYPESCRIPT | REDUX DEVTOOLS ",
+    descripcion: {
+      es: "App para seguimiento de turnos médicos y veterinarios.",
+      en: "App for tracking medical and veterinary appointments."
+    },
+    github: "https://github.com/Agusme/veterinaria-pacientes"
   },
   {
     name: "Control de Gastos💰",
     url: "https://control-gastos-agus.netlify.app/",
     img: controlGastos,
     technologies: "REACT | VITE | TAILWINDCSS | CONTEXT API",
+    descripcion: {
+      es: "Aplicación para registrar y analizar gastos personales.",
+      en: "Application to record and analyze personal expenses."
+    }
   },
   {
     name: "Contador de Calorias🏃🏽‍♀️",
     url: "https://caloriestrackerbyagus.netlify.app/",
     img: contadorCalorias,
     technologies: "REACT | VITE | TAILWINDCSS | USEREDUCER",
+    descripcion: {
+      es: "Herramienta para llevar control de calorías diarias.",
+      en: "Tool to keep track of daily calories."
+    }
   },
   {
     name: "App para Restorán🍽️",
     url: "https://consumptionandtips.netlify.app/",
     img: appRestoran,
     technologies: "REACT | VITE | TAILWINDCSS | CUSTOM HOOKS",
+    descripcion: {
+      es: "Gestión de consumos y propinas en restaurantes.",
+      en: "Management of consumption and tips in restaurants."
+    }
   }, {
     name: "ProManage",
     url: "https://pro-manage-three.vercel.app/",
     img: proManage,
     technologies: "REACT.JS | MATERIAL UI",
+    descripcion: {
+      es: "Organizador de tareas y proyectos personales.",
+      en: "Personal task and project organizer."
+    }
   },
   {
     name: "GuitarLA 🎸",
     url: "https://guitarla-practice.netlify.app/",
     img: guitar,
     technologies: "REACT | BOOTSTRAP | LOCALSTORAGE",
+    descripcion: {
+      es: "E-commerce de guitarras con carrito de compras.",
+      en: "Guitar e-commerce with shopping cart."
+    }
   }, 
   {
     name: "Turismo NOA",
     url: "https://turismonoa2023.netlify.app/",
     img: turismo,
     technologies: "HTML | CSS | BOOTSTRAP",
+    descripcion: {
+      es: "Sitio informativo sobre turismo en el norte argentino.",
+      en: "Informative site about tourism in northern Argentina."
+    }
   },
  
 ];
