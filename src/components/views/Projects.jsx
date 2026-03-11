@@ -220,16 +220,15 @@ const Projects = () => {
                               rel="noopener noreferrer"
                               className="btn d-flex align-items-center px-3 py-1 flex-fill justify-content-center project-btn-demo"
                               style={{
-                                background: "#5944ac",
+                                color: " #DBCE41",
                                 border: "none",
-                                color: "#fff",
+                                backgroundColor: "#fff",
                                 fontSize: 14,
                                 fontWeight: 600,
                                 minWidth: 100,
                                 maxWidth: "100%",
                               }}
                             >
-                              <ComputerIcon />
                               Ver demo
                             </a>
                             <a
@@ -240,9 +239,9 @@ const Projects = () => {
                               }
                               className={`btn d-flex align-items-center px-3 py-1 flex-fill justify-content-center project-btn-code${item.github ? "" : " disabled"}`}
                               style={{
-                                background: "#32a5d3",
+                                color: "#32a5d3",
                                 border: "none",
-                                color: "#fff",
+                                backgroundColor: "#fff",
                                 fontSize: 14,
                                 fontWeight: 600,
                                 minWidth: 100,
@@ -252,16 +251,7 @@ const Projects = () => {
                               }}
                               tabIndex={item.github ? 0 : -1}
                             >
-                              <img
-                                src={githubIcon}
-                                alt="GitHub"
-                                style={{
-                                  width: 18,
-                                  height: 18,
-                                  marginRight: 6,
-                                  filter: "invert(1)",
-                                }}
-                              />
+                          
                               Ver código
                             </a>
                           </div>
