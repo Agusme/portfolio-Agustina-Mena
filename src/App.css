@@ -216,7 +216,13 @@ body {
   opacity: 0;
   pointer-events: none; /* deja interactuar con la card */
 }
-
+.react-multi-carousel-dot-list {
+  position: absolute;
+  bottom: -3px !important;
+}
+.react-multi-carousel-list {
+  padding-bottom: 60px;
+}
 @media (max-width: 575.98px) {
   .icon-size {
     width: 40%;

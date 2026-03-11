@@ -33,7 +33,24 @@ const Projects = () => {
       items: 1,
     },
   };
-
+const CustomDot = ({ onClick, active }) => {
+  return (
+    <button
+      onClick={onClick}
+      style={{
+        width: active ? 14 : 10,
+        height: active ? 14 : 10,
+        borderRadius: "50%",
+        margin: " 6px",
+        border: "none",
+        backgroundColor: active ? "#DBCE41" : "#ddd",
+        transition: "all 0.3s ease",
+        transform: active ? "scale(1.2)" : "scale(1)",
+        cursor: "pointer",
+      }}
+    />
+  );
+};
   return (
     <div className="pb-5 pt-5 bg-projects" id="projects">
       <h2 className="text-center fs-1 fw-bold text-green-dark uniform-h2">
@@ -45,7 +62,9 @@ const Projects = () => {
             customTransition="all .5s"
             infinite
             responsive={responsive}
-            className="pt-4"
+            showDots={true}
+            customDot={<CustomDot />}
+            
           >
             {itemsProjects.map((item) => (
               <div key={item.name} className="px-2">
