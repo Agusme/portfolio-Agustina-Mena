@@ -40,7 +40,7 @@ const Projects = () => {
         {t("projects")}
       </h2>
       <Fade cascade damping={0.4} duration={1200} triggerOnce={false}>
-        <Container>
+        <Container fluid>
           <Carousel
             customTransition="all .5s"
             infinite

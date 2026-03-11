@@ -26,7 +26,7 @@ export default function CarouselComponent({ title, items }) {
   return (
     <div className="bg-projects py-4 px-2 text-green-dark">
       <Fade>
-        <Container>
+        <Container fluid>
           <h2 className="fw-bold fs-1 text-center uniform-h2">{title}</h2>
           <Carousel
             customTransition="all .5s"
