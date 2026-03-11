@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Fade } from "react-awesome-reveal";
+import CustomDot from "./CustomDot";
 
 export default function CarouselComponent({ title, items }) {
   const responsive = {
@@ -31,8 +32,12 @@ export default function CarouselComponent({ title, items }) {
           <Carousel
             customTransition="all .5s"
             infinite
+            showDots
             responsive={responsive}
-            className="pt-5 bg-glass"
+            className="pt-5 "
+                              customDot={<CustomDot />}
+                                removeArrowOnDeviceType={["tablet", "mobile"]}
+
           >
             {items.map((item, index) => (
               <div
