@@ -11,7 +11,6 @@ import css3Icon from "../../assets/iconos/css3.svg";
 import jsIcon from "../../assets/iconos/js.svg";
 import SkeletonComponent from "../common/SkeletonComponent";
 
-
 const Projects = () => {
   const { t, i18n } = useTranslation();
   const [loaded, setLoaded] = useState({});
@@ -37,9 +36,9 @@ const Projects = () => {
 
   return (
     <div className="pb-5 pt-5 bg-projects" id="projects">
-      <h1 className="text-center fs-1 pb-5 fw-bold text-green-dark pt-5">
+      <h2 className="text-center fs-1 fw-bold text-green-dark uniform-h2">
         {t("projects")}
-      </h1>
+      </h2>
       <Fade cascade damping={0.4} duration={1200} triggerOnce={false}>
         <Container>
           <Carousel
@@ -237,7 +236,6 @@ const Projects = () => {
                               }}
                               tabIndex={item.github ? 0 : -1}
                             >
-                          
                               Ver código
                             </a>
                           </div>

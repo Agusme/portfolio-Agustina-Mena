@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import React from "react";
 import Navegation from "./components/layouts/Navegation";
@@ -14,6 +14,9 @@ function App() {
   return (
     <>
       <Navegation />
+      <h1 className="visually-hidden">
+        Agustina Mena - Portfolio: Desarrolladora Frontend y Full Stack
+      </h1>
       <Main />
       <About />
       <Projects />
