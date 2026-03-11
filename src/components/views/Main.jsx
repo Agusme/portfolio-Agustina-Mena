@@ -12,42 +12,37 @@ const Main = () => {
   return (
     <div id="main">
       <Fade>
-      <Container fluid className="text-green-dark py-5">
-        <Row className="py-5">
-          <Col
-            className="py-5 d-flex flex-column justify-content-center align-items-center gap-3"
-            md={6}
-            lg={6}
-          >
-            <h1 className="fw-bold display-1">{t("greeting")}</h1>
-            <h2 className="fw-bold text-green fs-1">{im} </h2>
-            <h1 className="fw-semibold lead">{profession} </h1>
-            <a
-href="https://drive.google.com/file/d/17NsYBkLT48pNiz5h29egDGSbC4tS_HN1/view?usp=sharing"
-target="_blank"
-              rel="noreferrer"
-              className="btn btn-secondary"
+        <Container fluid className="text-green-dark py-5">
+          <Row className="py-5">
+            <Col
+              className="py-5 d-flex flex-column justify-content-center align-items-center gap-3"
+              md={6}
+              lg={6}
             >
-              {cv}
-            </a>
-          </Col>
-          <Col
-            md={6}
-            lg={6}
-          className="py-5"
-          >
-            <div className="d-flex justify-content-center align-items-center">
-            <img
-              src={fotoper}
-              alt="Agustina Mena - Full Stack Frontend Developer"
-              className="d-flex justify-content-center img-fluid w-50"
-              loading="lazy"
-            />
-
-            </div>
-          </Col>
-        </Row>
-      </Container>
+              <h1 className="fw-bold display-1">{t("greeting")}</h1>
+              <h2 className="fw-bold text-green fs-1 uniform-h2">{im} </h2>
+              <h1 className="fw-semibold lead">{profession} </h1>
+              <a
+                href="https://drive.google.com/file/d/17NsYBkLT48pNiz5h29egDGSbC4tS_HN1/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-secondary"
+              >
+                {cv}
+              </a>
+            </Col>
+            <Col md={6} lg={6} className="py-5">
+              <div className="d-flex justify-content-center align-items-center">
+                <img
+                  src={fotoper}
+                  alt="Agustina Mena - Full Stack Frontend Developer"
+                  className="d-flex justify-content-center img-fluid w-50"
+                  loading="lazy"
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </Fade>
     </div>
   );

@@ -35,7 +35,7 @@ const Contact = () => {
         emailjsConfig.serviceId,
         emailjsConfig.templateId,
         emailData,
-        emailjsConfig.publicKey
+        emailjsConfig.publicKey,
       );
       console.log("correo enviado con exito: ", response);
       setShowModal(true);
@@ -185,7 +185,7 @@ const Contact = () => {
   );
   return (
     <div className="bg-stack py-5 text-green-dark" id="contact">
-      <h2 className="fw-bold fs-1 text-center"> {contactTittle}</h2>
+      <h2 className="fw-bold fs-1 text-center uniform-h2"> {contactTittle}</h2>
       {!isMobile ? <Slide duration={500}>{context}</Slide> : context}
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
