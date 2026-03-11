@@ -6,25 +6,11 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { itemsProjects } from "../../data/db";
 import { itemsStackMern } from "../../data/db";
-import githubIcon from "../../assets/iconos/github.svg";
 import html5Icon from "../../assets/iconos/html5.svg";
 import css3Icon from "../../assets/iconos/css3.svg";
 import jsIcon from "../../assets/iconos/js.svg";
 import SkeletonComponent from "../common/SkeletonComponent";
-// Icono de compu (puedes reemplazar por otro SVG si tienes uno propio)
-const ComputerIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="18"
-    height="18"
-    fill="currentColor"
-    viewBox="0 0 16 16"
-    style={{ marginRight: 6 }}
-  >
-    <path d="M3 0a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H3zm10 1a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h10z" />
-    <path d="M0 13.5A1.5 1.5 0 0 0 1.5 15h13a1.5 1.5 0 0 0 1.5-1.5V13H0v.5zm3-1a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5V13H3v-.5z" />
-  </svg>
-);
+
 
 const Projects = () => {
   const { t, i18n } = useTranslation();
