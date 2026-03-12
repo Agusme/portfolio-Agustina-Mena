@@ -23,7 +23,7 @@ const Projects = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -171,40 +171,20 @@ const Projects = () => {
                                     return ia - ib;
                                   });
 
-                                // exclude these techs from showing icons
-                                const skipKeys = [
-                                  "ZUSTAND",
-                                  "REDUX",
-                                  "VITE",
-                                  "LOCALSTORAGE",
-                                  "HOOKS",
-                                  "CONTEXTAPI",
-                                ];
-                                mapped = mapped.filter(
-                                  (m) => !skipKeys.includes(m.key),
-                                );
+                                // Only keep mapped techs that have an image
+                                mapped = mapped.filter((m) => m.img);
 
                                 return mapped.map((m) => (
                                   <span
                                     key={m.key}
                                     className="tech-icons d-flex align-items-center px-2 py-1"
                                   >
-                                    {m.img ? (
+                                    {m.img && (
                                       <img
                                         src={m.img}
                                         alt={m.alt}
                                         className="tech-icon"
                                       />
-                                    ) : (
-                                      <span className="tech-icon-placeholder">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          viewBox="0 0 16 16"
-                                          fill="#bdbdbd"
-                                        >
-                                          <path d="M5.719 11.993a.5.5 0 0 1-.707.026l-3.5-3.25a.5.5 0 0 1 0-.738l3.5-3.25a.5.5 0 1 1 .68.732L2.384 8l3.308 3.068a.5.5 0 0 1 .027.707zm4.562-7.18a.5.5 0 0 1 .07.705L7.384 8l2.967 2.482a.5.5 0 1 1-.638.77l-3.5-2.929a.5.5 0 0 1 0-.77l3.5-2.929a.5.5 0 0 1 .705.07z" />
-                                        </svg>
-                                      </span>
                                     )}
                                   </span>
                                 ));

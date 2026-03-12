@@ -256,6 +256,12 @@ body {
 }
 .img-fixed {
   height: 250px;
+  width: 100%;
+}
+
+.object-fit-cover {
+  width: 100%;
+  object-fit: cover;
 }
 .fade-in {
   opacity: 0;
