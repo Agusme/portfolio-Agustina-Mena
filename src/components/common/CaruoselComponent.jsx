@@ -33,10 +33,8 @@ export default function CarouselComponent({ title, items }) {
             customTransition="all .5s"
             infinite
             showDots={true}
-            renderDotsOutside={true}
-            responsive={responsive}
-            className="pt-5 "
             customDot={<CustomDot />}
+            responsive={responsive}
             removeArrowOnDeviceType={["tablet", "mobile"]}
           >
             {items.map((item, index) => (
