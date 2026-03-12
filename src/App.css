@@ -166,11 +166,7 @@ body {
 .project-card:hover::before {
   opacity: 1;
 }
-.project-card {
-  min-height: 420px;
-  display: flex;
-  flex-direction: column;
-}
+
 
 .project-card .card-body {
   flex: 1;
@@ -318,13 +314,11 @@ body {
   }
 }
 
-/* Clase para aplicar márgenes uniformes a todos los h2 */
 .uniform-h2 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-/* Visually hidden (accessible) - para H1 invisible SEO */
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;

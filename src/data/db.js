@@ -39,8 +39,8 @@ export const itemsProjects = [
     img: bmzV2,
     technologies: "REACT.JS | TYPESCRIPT | TAILWIND.CSS",
     descripcion: {
-      es: "Sitio web inmobiliario moderno con filtros avanzados y diseño responsivo.",
-      en: "Modern real estate website with advanced filters and responsive design.",
+      es: "Sitio web inmobiliario moderno y diseño responsivo.",
+      en: "Modern real estate website and responsive design.",
     },
     github: "https://github.com/Agusme/bmz-inmobiliaria-v2",
   },
@@ -61,8 +61,8 @@ export const itemsProjects = [
     img: veterinaria,
     technologies: "BOOTSTRAP | REACT | MONGO DB | NODE.JS | EXPRESS.JS",
     descripcion: {
-      es: "Sistema integral para turnos y gestión veterinaria.",
-      en: "Comprehensive system for appointments and veterinary management.",
+      es: "Sistema para turnos y gestión veterinaria.",
+      en: "System for appointments and veterinary management.",
     },
     github: "https://github.com/maxigiordani/ProyectoVeterinaria",
   },
