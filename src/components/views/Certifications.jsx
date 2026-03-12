@@ -9,6 +9,7 @@ export default function Certifications() {
     <CarouselComponent
       title={t("certificationTittle")}
       items={itemsCertification}
+      
     />
   );
 }
