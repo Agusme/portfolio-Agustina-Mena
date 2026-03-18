@@ -13,17 +13,36 @@ import { Slide } from "react-awesome-reveal";
 import { useMediaQuery } from "react-responsive";
 
 const Contact = () => {
-  const { register, handleSubmit, errors, reset } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm();
   const [showModal, setShowModal] = React.useState(false);
+  const [submitError, setSubmitError] = React.useState("");
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   const emailjsConfig = {
-    serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID || "service_72n9tya",
-    templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "template_c4ds54h",
-    publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "BDtEaJzGHui804FZE",
+    serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID,
+    templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+    publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
   };
 
   const onSubmit = async (data) => {
+    setSubmitError("");
+
+    const missingConfig = Object.entries(emailjsConfig)
+      .filter(([, value]) => !value)
+      .map(([key]) => key);
+
+    if (missingConfig.length > 0) {
+      setSubmitError(
+        `Falta configurar EmailJS (${missingConfig.join(", ")}). Crea un archivo .env con REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID y REACT_APP_EMAILJS_PUBLIC_KEY.`,
+      );
+      return;
+    }
+
     try {
       const emailData = {
         ...data,
@@ -42,7 +61,9 @@ const Contact = () => {
       reset();
     } catch (error) {
       console.error("error al enviar el correo", error);
-      // TODO: Show error message to user
+      const detail = error?.text || error?.message || "Error desconocido";
+      const status = error?.status ? ` (status ${error.status})` : "";
+      setSubmitError(`No se pudo enviar el mensaje${status}: ${detail}`);
     }
   };
 
@@ -117,7 +138,7 @@ const Contact = () => {
           </ul>
         </Col>
         <Col lg={6} md={6} sm={12}>
-          <Form onSubmit={handleSubmit(onSubmit)}>
+          <Form onSubmit={handleSubmit(onSubmit)} noValidate>
             <Form.Group controlId="formName">
               <Form.Label>
                 {form1} <span className="text-danger fw-bold">*</span>
@@ -125,15 +146,17 @@ const Contact = () => {
               <Form.Control
                 type="text"
                 name="user_name"
+                isInvalid={!!errors.user_name}
                 {...register("user_name", {
-                  required: "Please provide a valid name",
-                  validate: (value) => validateName(value) || "Invalid name",
+                  required: "Por favor, proporciona un nombre válido",
+                  validate: (value) =>
+                    validateName(value) ||
+                    "Por favor, proporciona un nombre válido",
                 })}
                 maxLength={30}
               />
-              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               <Form.Control.Feedback type="invalid">
-                {errors && errors.user_name && errors.user_name.message}
+                {errors.user_name?.message}
               </Form.Control.Feedback>
             </Form.Group>
             <Form.Group controlId="formEmail">
@@ -142,16 +165,19 @@ const Contact = () => {
               </Form.Label>
               <Form.Control
                 name="user_email"
+                isInvalid={!!errors.user_email}
                 {...register("user_email", {
-                  required: "Please provide a valid email",
-                  validate: (value) => validateEmail(value) || "Invalid email",
+                  required:
+                    "Por favor, proporciona un correo electrónico válido",
+                  validate: (value) =>
+                    validateEmail(value) ||
+                    "Por favor, proporciona un correo electrónico válido",
                 })}
                 type="text"
                 maxLength={30}
               />
-              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               <Form.Control.Feedback type="invalid">
-                Please provide a valid email.
+                {errors.user_email?.message}
               </Form.Control.Feedback>
             </Form.Group>
             <Form.Group controlId="formMessage">
@@ -160,22 +186,30 @@ const Contact = () => {
               </Form.Label>
               <Form.Control
                 name="message"
+                isInvalid={!!errors.message}
                 {...register("message", {
-                  required: "Please provide a valid message",
+                  required: "Por favor, proporciona un mensaje válido",
                   validate: (value) =>
-                    validateMessage(value) || "Invalid message",
+                    validateMessage(value) ||
+                    "Por favor, proporciona un mensaje válido",
                 })}
                 as="textarea"
                 rows={4}
                 maxLength={1000}
-                required
               />
-              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               <Form.Control.Feedback type="invalid">
-                Please provide a message.
+                {errors.message?.message}
               </Form.Control.Feedback>
             </Form.Group>
-            <Button type="submit" variant="dark" className="mt-3">
+            {submitError && (
+              <p className="text-danger mt-3 mb-0">{submitError}</p>
+            )}
+            <Button
+              type="submit"
+              variant="dark"
+              className="mt-3"
+              disabled={isSubmitting}
+            >
               {submitContact}
             </Button>
           </Form>
