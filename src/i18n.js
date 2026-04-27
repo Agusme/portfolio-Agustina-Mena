@@ -14,7 +14,7 @@ i18n
           greeting: "<HOLA>",
           description: {
             im: "Soy Agustina Mena",
-            profession: "Full Stack Frontend Developer",
+            profession: "Desarrollo páginas web enfocadas en generar clientes",
             cv: "Ver CV",
           },
           navbar: {
@@ -70,7 +70,7 @@ i18n
 
           description: {
             im: "I'm Agustina Mena",
-            profession: "Full Stack Frontend Developer",
+            profession: "I develop websites designed to attract customers",
             cv: "View Resume",
           },
           navbar: {
