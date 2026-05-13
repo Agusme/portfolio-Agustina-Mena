@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { FaBullseye, FaCode, FaRocket } from "react-icons/fa";
-import fotoper from "../../assets/fotoper.png";
+import { FaBullseye, FaCode, FaDownload, FaRocket } from "react-icons/fa";
+import fotoMain from "../../assets/fotoMain.png";
 import { useTranslation } from "react-i18next";
 import { Fade } from "react-awesome-reveal";
 
@@ -47,17 +47,18 @@ const Main = () => {
                 href="https://drive.google.com/file/d/17NsYBkLT48pNiz5h29egDGSbC4tS_HN1/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-secondary"
+                className="btn btn-celeste mt-3"
               >
-                {cv}
+                <span>{cv}</span>
+                <FaDownload aria-hidden="true" />
               </a>
             </Col>
             <Col md={6} lg={6} className="py-5">
-              <div className="d-flex justify-content-center align-items-center">
+              <div className=" d-flex justify-content-center align-items-center">
                 <img
-                  src={fotoper}
+                  src={fotoMain}
                   alt="Agustina Mena - Full Stack Frontend Developer"
-                  className="d-flex justify-content-center img-fluid w-50"
+                  className="d-flex justify-content-center img-fluid w-img-main"
                   loading="lazy"
                 />
               </div>
