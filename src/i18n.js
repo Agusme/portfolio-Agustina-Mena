@@ -11,11 +11,17 @@ i18n
     resources: {
       es: {
         translation: {
-          greeting: "<HOLA>",
+          greeting: "¡ H O L A !",
           description: {
-            im: "Soy Agustina Mena",
+            im: "Soy",
             profession: "Desarrollo páginas web enfocadas en generar clientes",
+            profession2: "y hacer crecer tu negocio",
             cv: "Ver CV",
+            benefits: [
+              "Dise\u00f1o moderno y funcional",
+              "Enfoque en resultados",
+              "C\u00f3digo limpio y escalable",
+            ],
           },
           navbar: {
             projects: "Proyectos",
@@ -66,12 +72,18 @@ i18n
       },
       en: {
         translation: {
-          greeting: "<H E L L O>",
+          greeting: " H E L L O !",
 
           description: {
-            im: "I'm Agustina Mena",
+            im: "I'm",
             profession: "I develop websites designed to attract customers",
+            profession2: "and help grow your business",
             cv: "View Resume",
+            benefits: [
+              "Modern and functional design",
+              "Results-driven approach",
+              "Clean and scalable code",
+            ],
           },
           navbar: {
             projects: "Projects",

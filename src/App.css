@@ -28,8 +28,16 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
+:root {
+  --celeste: #48B8AD;
+  
+} 
 /* Estilo underline navbar */
+
+.text-celeste {
+  color: var(--celeste);
+}
+
 .underline-navbar {
   position: relative;
   display: inline-block;
@@ -43,7 +51,7 @@ body {
   bottom: 0;
   width: 4px;
   height: 2px;
-  background-color: #3acbbc;
+  background-color: var(--celeste);
   transition: width 0.2s ease-in-out;
 }
 
@@ -349,6 +357,61 @@ body {
 .uniform-h2 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.main-benefits {
+  width: 100%;
+  max-width: 680px;
+  gap: 0;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.main-benefit {
+  flex: 1;
+  min-width: 0;
+  padding: 0 1.25rem;
+}
+
+.main-benefit:first-child {
+  padding-left: 0;
+}
+
+.main-benefit:not(:last-child) {
+  border-right: 1px solid var(--celeste);
+}
+
+.main-benefit-icon {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  color: var(--celeste);
+}
+
+.main-benefit span {
+  max-width: 118px;
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+
+@media (max-width: 991.98px) {
+  .main-benefits {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 1rem;
+  }
+
+  .main-benefit {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-benefit:not(:last-child) {
+    border-right: 0;
+  }
+
+  .main-benefit span {
+    max-width: none;
+  }
 }
 
 .visually-hidden {
