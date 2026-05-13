@@ -50,7 +50,7 @@ const Navigation = () => {
                 to="projects"
                 smooth={true}
                 duration={500}
-                className="m-4  text-secondary text-decoration-none underline-navbar"
+                className="m-4  text-secondary text-decoration-none underline-navbar pink"
               >
                 <li className=" fw-bold">{projects}</li>
               </ScrollLink>
