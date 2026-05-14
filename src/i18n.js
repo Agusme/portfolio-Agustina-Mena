@@ -15,12 +15,14 @@ i18n
           description: {
             im: "Soy Agustina Mena",
             profession: "Desarrollo páginas web enfocadas en generar clientes",
+        
             cv: "Ver CV",
           },
           navbar: {
             projects: "Proyectos",
             contact: "Contacto",
             about: "Sobre mi",
+            role: "Desarrolladora Web",
           },
           aboutDescription: {
             aboutme: "Sobre mí",
@@ -89,6 +91,7 @@ i18n
             projects: "Projects",
             contact: "Contact",
             about: "About me",
+            role: "Web Developer",
           },
           aboutDescription: {
             aboutme: "About Me",
