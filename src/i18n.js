@@ -64,6 +64,18 @@ i18n
             info: "Más información",
             cel: "Celular",
             social: "Redes Sociales",
+            navigation: "Navegación",
+            contactTitle: "Contacto",
+            email: "Email",
+            location: "Ubicación",
+            description:
+              "Desarrollo páginas web enfocadas en generar clientes y",
+            cta: "Hablemos",
+            projectTitle: "¿Tienes un proyecto en mente?",
+            projectText:
+              "Estoy disponible para nuevos desafíos y colaboraciones.",
+            rights: "Todos los derechos reservados.",
+            madeWith: "Hecho con ❤ y mucho código",
           },
           modal: {
             title: "Consulta enviada",
@@ -127,6 +139,17 @@ i18n
             info: "More Information",
             cel: "Phone",
             social: "Social media",
+            navigation: "Navigation",
+            contactTitle: "Contact",
+            email: "Email",
+            location: "Location",
+            description: "I develop websites designed to attract customers and",
+            cta: "Let's talk",
+            projectTitle: "Do you have a project in mind?",
+            projectText:
+              "I am available for new challenges and collaborations.",
+            rights: "All rights reserved.",
+            madeWith: "Made with ❤ and lots of code",
           },
           modal: {
             title: "Query submitted",
