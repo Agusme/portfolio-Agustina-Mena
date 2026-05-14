@@ -27,6 +27,8 @@ i18n
             projects: "Proyectos",
             contact: "Contacto",
             about: "Sobre mi",
+            role: "Desarrolladora Web",
+            cta: "Hablemos",
           },
           aboutDescription: {
             aboutme: "Sobre mí",
@@ -89,6 +91,8 @@ i18n
             projects: "Projects",
             contact: "Contact",
             about: "About me",
+            role: "Web Developer",
+            cta: "Let's talk",
           },
           aboutDescription: {
             aboutme: "About Me",

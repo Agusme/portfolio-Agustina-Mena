@@ -14,8 +14,8 @@ const Main = () => {
   return (
     <div id="main">
       <Fade>
-        <Container  className="text-green-dark py-5">
-          <Row className="py-5">
+        <Container  className="text-green-dark">
+          <Row >
             <Col
               className="py-5 d-flex flex-column  gap-3"
               md={6}
