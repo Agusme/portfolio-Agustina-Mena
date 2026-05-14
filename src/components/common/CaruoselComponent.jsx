@@ -30,24 +30,28 @@ export default function CarouselComponent({ title, items }) {
         <Container fluid>
           <h2 className="fw-bold fs-1 text-center uniform-h2">{title}</h2>
           <Carousel
+            containerClass="certification-carousel"
             customTransition="all .5s"
             infinite
             showDots={true}
             customDot={<CustomDot />}
             responsive={responsive}
             removeArrowOnDeviceType={["tablet", "mobile"]}
+            itemClass="certification-carousel-item"
           >
             {items.map((item, index) => (
               <div
                 key={index}
-                className="cursor-pointer d-flex flex-column text-center gap-3 mx-2"
+                className="certification-card cursor-pointer d-flex flex-column text-center align-items-center"
               >
-                <img
-                  src={item.img}
-                  alt={item.alt}
-                  className="img-fluid img-fixed object-fit-cover"
-                  loading="lazy"
-                />
+                <figure className="certification-img-frame">
+                  <img
+                    src={item.img}
+                    alt={item.alt}
+                    className="certification-img"
+                    loading="lazy"
+                  />
+                </figure>
                 <h6 className="text-center fw-bold">{item.institution}</h6>
                 <p>{item.description}</p>
               </div>
