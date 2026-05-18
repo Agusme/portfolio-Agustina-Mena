@@ -101,7 +101,6 @@ i18n
   im: "I'm",
   profession:
     "I build modern web applications focused on performance and user experience.",
-  profession2: "",
   cv: "View Resume",
   benefits: [
     "React, Next.js & TypeScript",
