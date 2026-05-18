@@ -49,6 +49,8 @@ export default function CarouselComponent({ title, items }) {
                     src={item.img}
                     alt={item.alt}
                     className="certification-img"
+                    width={item.width}
+                    height={item.height}
                     loading="lazy"
                   />
                 </figure>
