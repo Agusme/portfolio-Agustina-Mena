@@ -14,20 +14,20 @@ i18n
           greeting: "¡ H O L A !",
           description: {
             im: "Soy",
-            profession: "Desarrollo páginas web enfocadas en generar clientes",
-            profession2: "y hacer crecer tu negocio",
+            profession:
+              "Desarrollo aplicaciones web modernas enfocadas en performance y experiencia de usuario.",
             cv: "Ver CV",
-            benefits: [
-              "Dise\u00f1o moderno y funcional",
-              "Enfoque en resultados",
-              "C\u00f3digo limpio y escalable",
-            ],
+           benefits: [
+  "React, Next.js y TypeScript",
+  "Interfaces modernas y responsive",
+  "Código limpio y escalable",
+],
           },
           navbar: {
             projects: "Proyectos",
             contact: "Contacto",
             about: "Sobre mi",
-            role: "Desarrolladora Web",
+            role: "Frontend Developer",
             cta: "Hablemos",
           },
           aboutDescription: {
@@ -64,6 +64,27 @@ i18n
             info: "Más información",
             cel: "Celular",
             social: "Redes Sociales",
+            navigation: "Navegación",
+            contactTitle: "Contacto",
+            email: "Email",
+            emailValue: "agusmena60@gmail.com",
+            location: "Ubicación",
+            locationValue: "Tucumán, Argentina",
+            phoneValue: "+54 381 563 3405",
+            description:
+              "Desarrollo páginas web enfocadas en generar clientes y",
+            cta: "Hablemos",
+            projectTitle: "¿Tienes un proyecto en mente?",
+            projectText: "Hablemos y lo hacemos realidad.",
+            rights: "Todos los derechos reservados.",
+            madeWith: "Hecho con ❤ y mucho código",
+            servicesTitle: "Servicios",
+            services: [
+              "Desarrollo Web",
+              "Sitios Responsivos",
+              "SEO Básico",
+              "Mantenimiento",
+            ],
           },
           modal: {
             title: "Consulta enviada",
@@ -76,22 +97,23 @@ i18n
         translation: {
           greeting: " H E L L O !",
 
-          description: {
-            im: "I'm",
-            profession: "I develop websites designed to attract customers",
-            profession2: "and help grow your business",
-            cv: "View Resume",
-            benefits: [
-              "Modern and functional design",
-              "Results-driven approach",
-              "Clean and scalable code",
-            ],
-          },
+         description: {
+  im: "I'm",
+  profession:
+    "I build modern web applications focused on performance and user experience.",
+  profession2: "",
+  cv: "View Resume",
+  benefits: [
+    "React, Next.js & TypeScript",
+    "Modern responsive interfaces",
+    "Clean and scalable code",
+  ],
+},
           navbar: {
             projects: "Projects",
             contact: "Contact",
             about: "About me",
-            role: "Web Developer",
+            role: "Frontend Developer",
             cta: "Let's talk",
           },
           aboutDescription: {
@@ -127,6 +149,26 @@ i18n
             info: "More Information",
             cel: "Phone",
             social: "Social media",
+            navigation: "Navigation",
+            contactTitle: "Contact",
+            email: "Email",
+            emailValue: "agusmena60@gmail.com",
+            location: "Location",
+            locationValue: "Tucumán, Argentina",
+            phoneValue: "+54 381 563 3405",
+            description: "I develop websites designed to attract customers and",
+            cta: "Let's talk",
+            projectTitle: "Do you have a project in mind?",
+            projectText: "Let's talk and make it real.",
+            rights: "All rights reserved.",
+            madeWith: "Made with ❤ and lots of code",
+            servicesTitle: "Services",
+            services: [
+              "Web Development",
+              "Responsive Sites",
+              "Basic SEO",
+              "Maintenance",
+            ],
           },
           modal: {
             title: "Query submitted",
