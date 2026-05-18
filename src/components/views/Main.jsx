@@ -59,7 +59,10 @@ const Main = () => {
                   src={fotoMain}
                   alt="Agustina Mena - Full Stack Frontend Developer"
                   className="d-flex justify-content-center img-fluid w-img-main"
-                  loading="lazy"
+                  width="753"
+                  height="837"
+                  fetchPriority="high"
+                  loading="eager"
                 />
               </div>
             </Col>

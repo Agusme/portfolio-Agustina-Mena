@@ -51,7 +51,7 @@ const Projects = () => {
             removeArrowOnDeviceType={["tablet", "mobile"]}
           >
             {itemsProjects.map((item) => {
-              const { name, img, url, descripcion, technologies, github } =
+              const { name, img, width, height, url, descripcion, technologies, github } =
                 item;
               return (
                 <div key={name} className="px-2">
@@ -74,6 +74,8 @@ const Projects = () => {
                             src={img}
                             alt={name}
                             className="img-fluid img-projects"
+                            width={width}
+                            height={height}
                             onLoad={() =>
                               setLoaded((prev) => ({
                                 ...prev,
@@ -131,6 +133,8 @@ const Projects = () => {
                                         key: normalize(found.nameSkill),
                                         img: found.imgIcon,
                                         alt: found.alt,
+                                        width: found.width,
+                                        height: found.height,
                                       };
 
                                     // fallback specific matches
@@ -139,18 +143,24 @@ const Projects = () => {
                                         key: "HTML5",
                                         img: html5Icon,
                                         alt: "HTML5 logo",
+                                        width: 107,
+                                        height: 106,
                                       };
                                     if (/^CSS/.test(key))
                                       return {
                                         key: "CSS3",
                                         img: css3Icon,
                                         alt: "CSS3 logo",
+                                        width: 107,
+                                        height: 106,
                                       };
                                     if (/^(JS|JAVASCRIPT)/.test(key))
                                       return {
                                         key: "JAVASCRIPT",
                                         img: jsIcon,
                                         alt: "JavaScript logo",
+                                        width: 106,
+                                        height: 106,
                                       };
 
                                     return { key, img: null, alt: key };
@@ -184,6 +194,8 @@ const Projects = () => {
                                         src={m.img}
                                         alt={m.alt}
                                         className="tech-icon"
+                                        width={m.width}
+                                        height={m.height}
                                       />
                                     )}
                                   </span>

@@ -28,6 +28,8 @@ const StackMern = () => {
                 src={item.imgIcon}
                 alt={item.alt}
                 className="img-fluid iconos-stack"
+                width={item.width}
+                height={item.height}
                 loading="lazy"
               />
             </div>

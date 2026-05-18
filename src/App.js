@@ -1,16 +1,31 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import React from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import Navegation from "./components/layouts/Navegation";
-import Footer from "./components/layouts/Footer";
 import Main from "./components/views/Main";
-import Projects from "./components/views/Projects";
-import StackMern from "./components/views/StackMern";
-import About from "./components/views/About";
-import Contact from "./components/views/Contact";
-import Certifications from "./components/views/Certifications";
+
+const About = lazy(() => import("./components/views/About"));
+const Projects = lazy(() => import("./components/views/Projects"));
+const StackMern = lazy(() => import("./components/views/StackMern"));
+const Certifications = lazy(() => import("./components/views/Certifications"));
+const Contact = lazy(() => import("./components/views/Contact"));
+const Footer = lazy(() => import("./components/layouts/Footer"));
 
 function App() {
+  useEffect(() => {
+    const loadDeferredStyles = () => {
+      import("./App.deferred.css");
+    };
+
+    if ("requestIdleCallback" in window) {
+      const idleId = window.requestIdleCallback(loadDeferredStyles);
+      return () => window.cancelIdleCallback(idleId);
+    }
+
+    const timeoutId = window.setTimeout(loadDeferredStyles, 1);
+    return () => window.clearTimeout(timeoutId);
+  }, []);
+
   return (
     <>
       <Navegation />
@@ -18,12 +33,14 @@ function App() {
         Agustina Mena - Portfolio: Desarrolladora Frontend y Full Stack
       </h1>
       <Main />
-      <About />
-      <Projects />
-      <StackMern />
-      <Certifications />
-      <Contact />
-      <Footer />
+      <Suspense fallback={null}>
+        <About />
+        <Projects />
+        <StackMern />
+        <Certifications />
+        <Contact />
+        <Footer />
+      </Suspense>
     </>
   );
 }

@@ -34,6 +34,8 @@ const About = () => {
             src={about}
             alt="about"
             className="d-flex justify-content-center img-fluid w-75 rounded"
+            width="768"
+            height="1024"
             loading="lazy"
           />
         </Col>
