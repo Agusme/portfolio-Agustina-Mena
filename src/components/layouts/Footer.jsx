@@ -116,7 +116,7 @@ const Footer = () => {
               </ScrollLink>
 
               <p className="footer-description">
-                {description} <strong>{t("description.profession2")}</strong>.
+                {description}.
               </p>
 
               <div className="footer-social-list" aria-label="Redes sociales">

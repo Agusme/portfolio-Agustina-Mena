@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 const Main = () => {
   const { t } = useTranslation();
 
-  const { im, profession, profession2, cv, benefits } = t("description");
+  const { im, profession, cv, benefits } = t("description");
   const benefitIcons = [FaRocket, FaBullseye, FaCode];
 
   return (
