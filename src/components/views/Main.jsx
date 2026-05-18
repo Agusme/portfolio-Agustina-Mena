@@ -25,7 +25,7 @@ const Main = () => {
               <h2 className="fw-bold text-green fs-1">{im} </h2>
               <h2 className="fw-bold text-green-dark fs-1 ">Agustina Mena </h2>
   
-              <h1 className="fw-semibold text-green-dark fs-5">{profession} <span className="text-celeste">{profession2}</span>. </h1>
+              <h1 className="fw-semibold text-green-dark fs-5">{profession} </h1>
               <div className="main-benefits d-flex align-items-center">
                 {benefits.map((benefit, index) => {
                   const BenefitIcon = benefitIcons[index];
