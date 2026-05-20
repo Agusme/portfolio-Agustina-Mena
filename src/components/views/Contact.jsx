@@ -88,53 +88,57 @@ const Contact = () => {
     <Container className="bg-glass p-5">
       <Row>
         <Col lg={6} md={6} sm={12}>
-          <h4 className="fw-semibold py-2 fs-2">{contact1} </h4>
+          <h3 className="fw-semibold py-2 fs-2">{contact1} </h3>
 
           <p className="mt-3">{contact2}</p>
           <p>{contact3}</p>
 
-          <ul className="list-unstyled d-flex  d-flex mt-4">
-            <a
-              href="https://github.com/Agusme"
-              className="text-decoration-none"
-              style={{ color: "inherit" }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <li className="mx-2  fs-1">
-                <FaGithub />
-              </li>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/agustina-mena-169298204/"
-              style={{ color: "inherit" }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <li className="mx-2 fs-1">
-                <FaLinkedin />
-              </li>
-            </a>
-            <a
-              href="https://www.facebook.com/agusmena97/"
-              style={{ color: "inherit" }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <li className="mx-2 fs-1">
-                <FaFacebook />
-              </li>
-            </a>
-            <a
-              href="https://www.instagram.com/agusmenaa/"
-              style={{ color: "inherit" }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <li className="mx-2 fs-1">
-                <FaInstagram />
-              </li>
-            </a>
+          <ul className="list-unstyled d-flex mt-4" aria-label="Redes sociales">
+            <li className="mx-2 fs-1">
+              <a
+                href="https://github.com/Agusme"
+                className="text-decoration-none"
+                style={{ color: "inherit" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub de Agustina Mena"
+              >
+                <FaGithub aria-hidden="true" />
+              </a>
+            </li>
+            <li className="mx-2 fs-1">
+              <a
+                href="https://www.linkedin.com/in/agustina-mena-169298204/"
+                style={{ color: "inherit" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn de Agustina Mena"
+              >
+                <FaLinkedin aria-hidden="true" />
+              </a>
+            </li>
+            <li className="mx-2 fs-1">
+              <a
+                href="https://www.facebook.com/agusmena97/"
+                style={{ color: "inherit" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook de Agustina Mena"
+              >
+                <FaFacebook aria-hidden="true" />
+              </a>
+            </li>
+            <li className="mx-2 fs-1">
+              <a
+                href="https://www.instagram.com/agusmenaa/"
+                style={{ color: "inherit" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram de Agustina Mena"
+              >
+                <FaInstagram aria-hidden="true" />
+              </a>
+            </li>
           </ul>
         </Col>
         <Col lg={6} md={6} sm={12}>
@@ -146,6 +150,8 @@ const Contact = () => {
               <Form.Control
                 type="text"
                 name="user_name"
+                autoComplete="name"
+                aria-describedby="formNameError"
                 isInvalid={!!errors.user_name}
                 {...register("user_name", {
                   required: "Por favor, proporciona un nombre válido",
@@ -155,7 +161,7 @@ const Contact = () => {
                 })}
                 maxLength={30}
               />
-              <Form.Control.Feedback type="invalid">
+              <Form.Control.Feedback type="invalid" id="formNameError">
                 {errors.user_name?.message}
               </Form.Control.Feedback>
             </Form.Group>
@@ -165,6 +171,9 @@ const Contact = () => {
               </Form.Label>
               <Form.Control
                 name="user_email"
+                type="email"
+                autoComplete="email"
+                aria-describedby="formEmailError"
                 isInvalid={!!errors.user_email}
                 {...register("user_email", {
                   required:
@@ -173,10 +182,9 @@ const Contact = () => {
                     validateEmail(value) ||
                     "Por favor, proporciona un correo electrónico válido",
                 })}
-                type="text"
                 maxLength={30}
               />
-              <Form.Control.Feedback type="invalid">
+              <Form.Control.Feedback type="invalid" id="formEmailError">
                 {errors.user_email?.message}
               </Form.Control.Feedback>
             </Form.Group>
@@ -186,6 +194,7 @@ const Contact = () => {
               </Form.Label>
               <Form.Control
                 name="message"
+                aria-describedby="formMessageError"
                 isInvalid={!!errors.message}
                 {...register("message", {
                   required: "Por favor, proporciona un mensaje válido",
@@ -197,12 +206,14 @@ const Contact = () => {
                 rows={4}
                 maxLength={1000}
               />
-              <Form.Control.Feedback type="invalid">
+              <Form.Control.Feedback type="invalid" id="formMessageError">
                 {errors.message?.message}
               </Form.Control.Feedback>
             </Form.Group>
             {submitError && (
-              <p className="text-danger mt-3 mb-0">{submitError}</p>
+              <p className="text-danger mt-3 mb-0" role="alert">
+                {submitError}
+              </p>
             )}
             <Button
               type="submit"

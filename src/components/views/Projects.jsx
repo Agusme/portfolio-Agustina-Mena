@@ -11,6 +11,7 @@ import css3Icon from "../../assets/iconos/css3.svg";
 import jsIcon from "../../assets/iconos/js.svg";
 import SkeletonComponent from "../common/SkeletonComponent";
 import CustomDot from "../common/CustomDot";
+import CarouselArrow from "../common/CarouselArrow";
 
 const Projects = () => {
   const { t, i18n } = useTranslation();
@@ -48,6 +49,8 @@ const Projects = () => {
             responsive={responsive}
             showDots={true}
             customDot={<CustomDot />}
+            customLeftArrow={<CarouselArrow direction="left" />}
+            customRightArrow={<CarouselArrow direction="right" />}
             removeArrowOnDeviceType={["tablet", "mobile"]}
           >
             {itemsProjects.map((item) => {
@@ -55,24 +58,18 @@ const Projects = () => {
                 item;
               return (
                 <div key={name} className="px-2">
-                  <a
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-decoration-none"
-                  >
-                    <div className="position-relative h-100">
+                  <div className="position-relative h-100">
                       <Card
                         className={`bg-glass text-green-dark text-center project-card border-0 h-100 fade-in ${
                           loaded[name] ? "visible" : ""
                         }`}
                       >
                         <Card.Body className="d-flex flex-column justify-content-center align-items-center">
-                          <h6 className="fw-semibold">{name}</h6>
+                          <h3 className="fw-semibold fs-6">{name}</h3>
 
                           <img
                             src={img}
-                            alt={name}
+                            alt={`Captura del proyecto ${name}`}
                             className="img-fluid img-projects"
                             width={width}
                             height={height}
@@ -209,6 +206,7 @@ const Projects = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn d-flex align-items-center px-3 py-1 flex-fill justify-content-center project-btn-demo"
+                                aria-label={`Ver demo de ${name}`}
                                 style={{
                                   color: " #DBCE41",
                                   border: "none",
@@ -222,9 +220,15 @@ const Projects = () => {
                                 Ver demo
                               </a>
                               <a
-                                href={github ? github : undefined}
+                                href={github || "#projects"}
                                 target={github ? "_blank" : undefined}
                                 rel={github ? "noopener noreferrer" : undefined}
+                                aria-label={
+                                  github
+                                    ? `Ver código de ${name}`
+                                    : `Código de ${name} no disponible`
+                                }
+                                aria-disabled={github ? undefined : "true"}
                                 className={`btn d-flex align-items-center px-3 py-1 flex-fill justify-content-center project-btn-code${github ? "" : " disabled"}`}
                                 style={{
                                   color: "#32a5d3",
@@ -248,11 +252,11 @@ const Projects = () => {
 
                       <div
                         className={`skeleton-overlay ${loaded[name] ? "fade-out" : "fade-in"}`}
+                        aria-hidden="true"
                       >
                         <SkeletonComponent />
                       </div>
-                    </div>
-                  </a>
+                  </div>
                 </div>
               );
             })}
