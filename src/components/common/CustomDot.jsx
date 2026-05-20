@@ -1,8 +1,10 @@
-const CustomDot = ({ onClick, active }) => {
+const CustomDot = ({ onClick, active, index }) => {
   return (
     <button
       type="button"
       onClick={onClick}
+      aria-label={`Ir al slide ${index + 1}`}
+      aria-current={active ? "true" : undefined}
       style={{
         width: active ? 14 : 10,
         height: active ? 14 : 10,

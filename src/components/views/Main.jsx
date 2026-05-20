@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { FaBullseye, FaCode, FaDownload, FaRocket } from "react-icons/fa";
-import fotoMain from "../../assets/fotoMain.png";
+import fotoMain from "../../assets/fotoMain.webp";
 import { useTranslation } from "react-i18next";
 import { Fade } from "react-awesome-reveal";
 
@@ -25,7 +25,9 @@ const Main = () => {
               <h2 className="fw-bold text-green fs-1">{im} </h2>
               <h2 className="fw-bold text-green-dark fs-1 ">Agustina Mena </h2>
   
-              <h1 className="fw-semibold text-green-dark fs-5">{profession} </h1>
+              <p className="fw-semibold text-green-dark fs-5 mb-0">
+                {profession}
+              </p>
               <div className="main-benefits d-flex align-items-center">
                 {benefits.map((benefit, index) => {
                   const BenefitIcon = benefitIcons[index];
@@ -35,7 +37,7 @@ const Main = () => {
                       className="main-benefit d-flex align-items-center gap-3 my-2"
                       key={benefit}
                     >
-                      <BenefitIcon className="main-benefit-icon" />
+                      <BenefitIcon className="main-benefit-icon" aria-hidden="true" />
                       <span className="fw-bold text-green-dark">
                         {benefit}
                       </span>

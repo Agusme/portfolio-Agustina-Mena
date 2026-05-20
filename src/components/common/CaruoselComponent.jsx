@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Fade } from "react-awesome-reveal";
 import CustomDot from "./CustomDot";
+import CarouselArrow from "./CarouselArrow";
 
 export default function CarouselComponent({ title, items }) {
   const responsive = {
@@ -35,6 +36,8 @@ export default function CarouselComponent({ title, items }) {
             infinite
             showDots={true}
             customDot={<CustomDot />}
+            customLeftArrow={<CarouselArrow direction="left" />}
+            customRightArrow={<CarouselArrow direction="right" />}
             responsive={responsive}
             removeArrowOnDeviceType={["tablet", "mobile"]}
             itemClass="certification-carousel-item"
@@ -54,7 +57,7 @@ export default function CarouselComponent({ title, items }) {
                     loading="lazy"
                   />
                 </figure>
-                <h6 className="text-center fw-bold">{item.institution}</h6>
+                <h3 className="text-center fw-bold fs-6">{item.institution}</h3>
                 <p>{item.description}</p>
               </div>
             ))}

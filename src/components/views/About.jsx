@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import about from "../../assets/about.jpeg";
+import about from "../../assets/about.webp";
 import { useTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
 import { useMediaQuery } from "react-responsive";
@@ -18,7 +18,7 @@ const About = () => {
       </h2>
       <Row className="bg-glass p-5">
         <Col sm={12} md={6} lg={6}>
-          <h4 className="fw-semibold py-2">{about1}</h4>
+          <h3 className="fw-semibold py-2 fs-4">{about1}</h3>
           <p>{about2}</p>
           <p>{about3}</p>
           <p>{about4}</p>
@@ -32,10 +32,10 @@ const About = () => {
         >
           <img
             src={about}
-            alt="about"
+            alt="Agustina Mena trabajando en desarrollo web"
             className="d-flex justify-content-center img-fluid w-75 rounded"
-            width="768"
-            height="1024"
+            width="374"
+            height="498"
             loading="lazy"
           />
         </Col>
