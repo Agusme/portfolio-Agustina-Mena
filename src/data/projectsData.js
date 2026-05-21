@@ -1,8 +1,15 @@
+import bmzV2 from "../assets/proyectos/bmzV2.webp";
+import bmz from "../assets/proyectos/bmz.webp";
+import veterinariaRolling from "../assets/proyectos/veterinaria.webp";
+import rollingMovies from "../assets/proyectos/rollingMovies.webp";
+import promanage from "../assets/proyectos/proManage.webp";
+import turismoNoa from "../assets/proyectos/turismo.webp";
+
 export const itemsProjects = [
   {
     name: "Inmobiliaria Bmz Propiedades v2",
     url: "https://inmobiliaria-bmzpropiedades.vercel.app/",
-    img: "/assets/proyectos/bmzV2.jpg",
+    img: bmzV2,
     width: 1877,
     height: 852,
     technologies: "REACT.JS | TYPESCRIPT | TAILWIND.CSS",
@@ -15,7 +22,7 @@ export const itemsProjects = [
   {
     name: "Inmobiliaria Bmz Propiedades",
     url: "https://bmzpropiedades.netlify.app/",
-    img: "/assets/proyectos/bmz.jpg",
+    img: bmz,
     width: 1855,
     height: 844,
     technologies: "REACT.JS | MONGODB | NODE.JS | EXPRESS.JS",
@@ -28,7 +35,7 @@ export const itemsProjects = [
   {
     name: "Veterinaria Rolling",
     url: "https://veterinariarolling.netlify.app/",
-    img: "/assets/proyectos/veterinaria.jpg",
+    img: veterinariaRolling,
     width: 1876,
     height: 868,
     technologies: "BOOTSTRAP | REACT | MONGO DB | NODE.JS | EXPRESS.JS",
@@ -41,7 +48,7 @@ export const itemsProjects = [
   {
     name: "Rolling Movies+",
     url: "https://rollingmoviesplus.netlify.app/",
-    img: "/assets/proyectos/rollingMovies.jpg",
+    img: rollingMovies,
     width: 1885,
     height: 865,
     technologies: "HTML | CSS | BOOTSTRAP | JS VANILLA",
@@ -103,7 +110,7 @@ export const itemsProjects = [
   {
     name: "ProManage",
     url: "https://pro-manage-three.vercel.app/",
-    img: "/assets/proyectos/proManage.jpg",
+    img: promanage,
     width: 1881,
     height: 867,
     technologies: "REACT.JS | MATERIAL UI",
@@ -127,7 +134,7 @@ export const itemsProjects = [
   {
     name: "Turismo NOA",
     url: "https://turismonoa2023.netlify.app/",
-    img: "/assets/proyectos/turismo.jpg",
+    img: turismoNoa,
     width: 1890,
     height: 859,
     technologies: "HTML | CSS | BOOTSTRAP",
