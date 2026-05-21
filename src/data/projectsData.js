@@ -1,22 +1,8 @@
-
-
-import rollingMovies from "../assets/proyectos/rollingMovies.jpg";
-import turismo from "../assets/proyectos/turismo.jpg";
-import veterinaria from "../assets/proyectos/veterinaria.jpg";
-import bmz from "../assets/proyectos/bmz.jpg";
-import bmzV2 from "../assets/proyectos/bmzV2.jpg";
-import guitar from "../assets/proyectos/guitar.jpg";
-import proManage from "../assets/proyectos/proManage.jpg";
-import appRestoran from "../assets/proyectos/app-restoran.jpg";
-import contadorCalorias from "../assets/proyectos/contadorCalorias.png";
-import controlGastos from "../assets/proyectos/controlGastos.png";
-import seguimientoTurnos from "../assets/proyectos/seguimientoTurnos.png";
-
 export const itemsProjects = [
   {
     name: "Inmobiliaria Bmz Propiedades v2",
     url: "https://inmobiliaria-bmzpropiedades.vercel.app/",
-    img: bmzV2,
+    img: "/assets/proyectos/bmzV2.jpg",
     width: 1877,
     height: 852,
     technologies: "REACT.JS | TYPESCRIPT | TAILWIND.CSS",
@@ -29,7 +15,7 @@ export const itemsProjects = [
   {
     name: "Inmobiliaria Bmz Propiedades",
     url: "https://bmzpropiedades.netlify.app/",
-    img: bmz,
+    img: "/assets/proyectos/bmz.jpg",
     width: 1855,
     height: 844,
     technologies: "REACT.JS | MONGODB | NODE.JS | EXPRESS.JS",
@@ -42,7 +28,7 @@ export const itemsProjects = [
   {
     name: "Veterinaria Rolling",
     url: "https://veterinariarolling.netlify.app/",
-    img: veterinaria,
+    img: "/assets/proyectos/veterinaria.jpg",
     width: 1876,
     height: 868,
     technologies: "BOOTSTRAP | REACT | MONGO DB | NODE.JS | EXPRESS.JS",
@@ -55,7 +41,7 @@ export const itemsProjects = [
   {
     name: "Rolling Movies+",
     url: "https://rollingmoviesplus.netlify.app/",
-    img: rollingMovies,
+    img: "/assets/proyectos/rollingMovies.jpg",
     width: 1885,
     height: 865,
     technologies: "HTML | CSS | BOOTSTRAP | JS VANILLA",
@@ -68,7 +54,7 @@ export const itemsProjects = [
   {
     name: "Seguimiento de Turnos",
     url: "https://veterinariaagus.netlify.app/",
-    img: seguimientoTurnos,
+    img: "/assets/proyectos/seguimientoTurnos.png",
     width: 1789,
     height: 811,
     technologies: "REACT | ZUSTAND | TYPESCRIPT | REDUX DEVTOOLS ",
@@ -81,7 +67,7 @@ export const itemsProjects = [
   {
     name: "Control de Gastos💰",
     url: "https://control-gastos-agus.netlify.app/",
-    img: controlGastos,
+    img: "/assets/proyectos/controlGastos.png",
     width: 1884,
     height: 849,
     technologies: "REACT | VITE | TAILWINDCSS | CONTEXT API",
@@ -93,7 +79,7 @@ export const itemsProjects = [
   {
     name: "Contador de Calorias🏃🏽‍♀️",
     url: "https://caloriestrackerbyagus.netlify.app/",
-    img: contadorCalorias,
+    img: "/assets/proyectos/contadorCalorias.png",
     width: 1847,
     height: 850,
     technologies: "REACT | VITE | TAILWINDCSS | USEREDUCER",
@@ -105,7 +91,7 @@ export const itemsProjects = [
   {
     name: "App para Restorán🍽️",
     url: "https://consumptionandtips.netlify.app/",
-    img: appRestoran,
+    img: "/assets/proyectos/app-restoran.jpg",
     width: 1862,
     height: 869,
     technologies: "REACT | VITE | TAILWINDCSS | CUSTOM HOOKS",
@@ -117,7 +103,7 @@ export const itemsProjects = [
   {
     name: "ProManage",
     url: "https://pro-manage-three.vercel.app/",
-    img: proManage,
+    img: "/assets/proyectos/proManage.jpg",
     width: 1881,
     height: 867,
     technologies: "REACT.JS | MATERIAL UI",
@@ -129,7 +115,7 @@ export const itemsProjects = [
   {
     name: "GuitarLA 🎸",
     url: "https://guitarla-practice.netlify.app/",
-    img: guitar,
+    img: "/assets/proyectos/guitar.jpg",
     width: 1861,
     height: 857,
     technologies: "REACT | BOOTSTRAP | LOCALSTORAGE",
@@ -141,7 +127,7 @@ export const itemsProjects = [
   {
     name: "Turismo NOA",
     url: "https://turismonoa2023.netlify.app/",
-    img: turismo,
+    img: "/assets/proyectos/turismo.jpg",
     width: 1890,
     height: 859,
     technologies: "HTML | CSS | BOOTSTRAP",

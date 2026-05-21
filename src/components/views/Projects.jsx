@@ -6,10 +6,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { itemsProjects } from "../../data/projectsData";
 import { itemsStackMern } from "../../data/stack";
-import {} from "../../data/db";
-import html5Icon from "../../assets/iconos/html5.svg";
-import css3Icon from "../../assets/iconos/css3.svg";
-import jsIcon from "../../assets/iconos/js.svg";
 import SkeletonComponent from "../common/SkeletonComponent";
 import CustomDot from "../common/CustomDot";
 import CarouselArrow from "../common/CarouselArrow";
@@ -146,7 +142,7 @@ const Projects = () => {
                                   if (/^HTML/.test(key))
                                     return {
                                       key: "HTML5",
-                                      img: html5Icon,
+                                      img: "/assets/iconos/html5.svg",
                                       alt: "HTML5 logo",
                                       width: 107,
                                       height: 106,
@@ -154,7 +150,7 @@ const Projects = () => {
                                   if (/^CSS/.test(key))
                                     return {
                                       key: "CSS3",
-                                      img: css3Icon,
+                                      img: "/assets/iconos/css3.svg",
                                       alt: "CSS3 logo",
                                       width: 107,
                                       height: 106,
@@ -162,7 +158,7 @@ const Projects = () => {
                                   if (/^(JS|JAVASCRIPT)/.test(key))
                                     return {
                                       key: "JAVASCRIPT",
-                                      img: jsIcon,
+                                      img: "/assets/iconos/js.svg",
                                       alt: "JavaScript logo",
                                       width: 106,
                                       height: 106,
