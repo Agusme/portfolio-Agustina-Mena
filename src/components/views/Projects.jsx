@@ -6,6 +6,9 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { itemsProjects } from "../../data/projectsData";
 import { itemsStackMern } from "../../data/stack";
+import html5Icon from "../../assets/iconos/html5.svg";
+import css3Icon from "../../assets/iconos/css3.svg";
+import jsIcon from "../../assets/iconos/js.svg";
 import SkeletonComponent from "../common/SkeletonComponent";
 import CustomDot from "../common/CustomDot";
 import CarouselArrow from "../common/CarouselArrow";
@@ -78,7 +81,6 @@ const Projects = () => {
                           className="img-fluid img-projects"
                           width={width}
                           height={height}
-                          loading="lazy"
                           onLoad={() =>
                             setLoaded((prev) => ({
                               ...prev,
@@ -143,7 +145,7 @@ const Projects = () => {
                                   if (/^HTML/.test(key))
                                     return {
                                       key: "HTML5",
-                                      img: "/assets/iconos/html5.svg",
+                                      img: html5Icon,
                                       alt: "HTML5 logo",
                                       width: 107,
                                       height: 106,
@@ -151,7 +153,7 @@ const Projects = () => {
                                   if (/^CSS/.test(key))
                                     return {
                                       key: "CSS3",
-                                      img: "/assets/iconos/css3.svg",
+                                      img: css3Icon,
                                       alt: "CSS3 logo",
                                       width: 107,
                                       height: 106,
@@ -159,7 +161,7 @@ const Projects = () => {
                                   if (/^(JS|JAVASCRIPT)/.test(key))
                                     return {
                                       key: "JAVASCRIPT",
-                                      img: "/assets/iconos/js.svg",
+                                      img: jsIcon,
                                       alt: "JavaScript logo",
                                       width: 106,
                                       height: 106,
@@ -197,7 +199,6 @@ const Projects = () => {
                                       className="tech-icon"
                                       width={m.width}
                                       height={m.height}
-                                      loading="lazy"
                                     />
                                   )}
                                 </span>

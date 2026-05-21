@@ -549,7 +549,11 @@
   height: 1rem;
   color: #14b8aa;
 }
-
+.react-multi-carousel-item[aria-hidden="true"] a,
+.react-multi-carousel-item[aria-hidden="true"] button {
+  visibility: hidden;
+  pointer-events: none;
+} 
 @media (max-width: 600px) {
   .project-btns-responsive .btn.flex-fill {
     min-width: 80px !important;
