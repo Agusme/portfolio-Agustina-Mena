@@ -32,23 +32,24 @@ const About = () => {
           lg={6}
           className="d-flex align-items-center justify-content-center pt-3"
         >
-      <img
-  src={about320}
-  srcSet={`
+          <img
+            src={about320}
+            srcSet={`
     ${about220} 220w,
     ${about260} 260w,
     ${about320} 320w
   `}
-  sizes="
+            sizes="
     (max-width: 576px) 220px,
     (max-width: 992px) 260px,
     320px
   "
-  alt="Agustina Mena trabajando en desarrollo web"
-  className="d-flex justify-content-center img-fluid w-75 rounded"
-  width="374"
-  height="498"
-/>
+            alt="Agustina Mena trabajando en desarrollo web"
+            className="d-flex justify-content-center img-fluid w-75 rounded"
+            width="320"
+            height="426"
+            loading="lazy"
+          />
         </Col>
       </Row>
     </Container>
