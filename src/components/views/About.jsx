@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import about from "../../assets/about.webp";
+import about320 from "../../assets/about/about320.webp";
+import about480 from "../../assets/about/about480.webp";
+import about600 from "../../assets/about/about600.webp";
 import { useTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
 import { useMediaQuery } from "react-responsive";
@@ -30,14 +32,23 @@ const About = () => {
           lg={6}
           className="d-flex align-items-center justify-content-center pt-3"
         >
-          <img
-            src={about}
-            alt="Agustina Mena trabajando en desarrollo web"
-            className="d-flex justify-content-center img-fluid w-75 rounded"
-            width="374"
-            height="498"
-            loading="lazy"
-          />
+         <img
+  src={about600}
+  srcSet={`
+    ${about320} 320w,
+    ${about480} 480w,
+    ${about600} 600w
+  `}
+  sizes="
+    (max-width: 576px) 320px,
+    (max-width: 992px) 480px,
+    600px
+  "
+  alt="Agustina Mena trabajando en desarrollo web"
+  className="d-flex justify-content-center img-fluid w-75 rounded"
+  width="374"
+  height="498"
+/>
         </Col>
       </Row>
     </Container>
