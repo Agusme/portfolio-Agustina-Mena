@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import about320 from "../../assets/about/about320.webp";
 import about480 from "../../assets/about/about480.webp";
-import about600 from "../../assets/about/about600.webp";
+import about220 from "../../assets/about/about220.webp";
 import { useTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
 import { useMediaQuery } from "react-responsive";
@@ -32,17 +32,17 @@ const About = () => {
           lg={6}
           className="d-flex align-items-center justify-content-center pt-3"
         >
-         <img
-  src={about600}
+        <img
+  src={about480}
   srcSet={`
+    ${about220} 220w,
     ${about320} 320w,
-    ${about480} 480w,
-    ${about600} 600w
+    ${about480} 480w
   `}
   sizes="
-    (max-width: 576px) 320px,
-    (max-width: 992px) 480px,
-    600px
+    (max-width: 576px) 220px,
+    (max-width: 992px) 320px,
+    480px
   "
   alt="Agustina Mena trabajando en desarrollo web"
   className="d-flex justify-content-center img-fluid w-75 rounded"
