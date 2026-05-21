@@ -1,4 +1,5 @@
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
   webpack: {
@@ -56,7 +57,7 @@ module.exports = {
             openAnalyzer: false,
             generateStatsFile: true,
             statsFilename: "bundle-stats.json",
-          })
+          }),
         );
       }
 
