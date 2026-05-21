@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { itemsStackMern } from "../../data/db";
+import { itemsStackMern } from "../../data/stack";
 import { Slide } from "react-awesome-reveal";
 import { useMediaQuery } from "react-responsive";
 
