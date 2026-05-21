@@ -30,9 +30,10 @@ const OptimizedCarousel = React.memo(
     const observerRef = useRef(null);
 
     // Memoiza la configuración responsive para evitar recálculos
-    const memoizedResponsive = useMemo(() => responsive, [
-      JSON.stringify(responsive),
-    ]);
+    const memoizedResponsive = useMemo(
+      () => responsive,
+      [JSON.stringify(responsive)],
+    );
 
     // Intersection Observer para lazy-load del carousel
     useEffect(() => {
@@ -57,7 +58,7 @@ const OptimizedCarousel = React.memo(
         {
           rootMargin: "50px", // Comienza a cargar 50px antes de ser visible
           threshold: 0.1,
-        }
+        },
       );
 
       observerRef.current.observe(element);
@@ -111,7 +112,7 @@ const OptimizedCarousel = React.memo(
         )}
       </div>
     );
-  }
+  },
 );
 
 OptimizedCarousel.displayName = "OptimizedCarousel";

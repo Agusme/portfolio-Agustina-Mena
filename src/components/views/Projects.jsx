@@ -35,7 +35,7 @@ const Projects = () => {
         items: 1,
       },
     }),
-    []
+    [],
   );
 
   return (
