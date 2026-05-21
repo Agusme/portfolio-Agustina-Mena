@@ -25,7 +25,7 @@ export default function CarouselComponent({ title, items }) {
         items: 1,
       },
     }),
-    []
+    [],
   );
 
   return (

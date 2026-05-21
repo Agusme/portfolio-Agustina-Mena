@@ -14,17 +14,13 @@ const Main = () => {
   return (
     <div id="main">
       <Fade>
-        <Container  className="text-green-dark">
-          <Row >
-            <Col
-              className="py-5 d-flex flex-column  gap-3"
-              md={6}
-              lg={6}
-            >
+        <Container className="text-green-dark">
+          <Row>
+            <Col className="py-5 d-flex flex-column  gap-3" md={6} lg={6}>
               <p className="fw-bold fs-5 text-celeste ">{t("greeting")}</p>
               <h2 className="fw-bold text-green fs-1">{im} </h2>
               <h2 className="fw-bold text-green-dark fs-1 ">Agustina Mena </h2>
-  
+
               <p className="fw-semibold text-green-dark fs-5 mb-0">
                 {profession}
               </p>
@@ -37,10 +33,11 @@ const Main = () => {
                       className="main-benefit d-flex align-items-center gap-3 my-2"
                       key={benefit}
                     >
-                      <BenefitIcon className="main-benefit-icon" aria-hidden="true" />
-                      <span className="fw-bold text-green-dark">
-                        {benefit}
-                      </span>
+                      <BenefitIcon
+                        className="main-benefit-icon"
+                        aria-hidden="true"
+                      />
+                      <span className="fw-bold text-green-dark">{benefit}</span>
                     </div>
                   );
                 })}
