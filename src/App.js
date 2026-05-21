@@ -1,4 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import React, { Suspense, lazy, useEffect } from "react";
 import Navegation from "./components/layouts/Navegation";
