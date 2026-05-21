@@ -22,7 +22,7 @@ const OptimizedImage = ({
   useEffect(() => {
     // Use Intersection Observer for even better performance
     const img = new Image();
-    
+
     const handleLoad = () => {
       setImageSrc(src);
       setIsLoading(false);
