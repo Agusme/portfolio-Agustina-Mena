@@ -78,6 +78,7 @@ const Projects = () => {
                           className="img-fluid img-projects"
                           width={width}
                           height={height}
+                          loading="lazy"
                           onLoad={() =>
                             setLoaded((prev) => ({
                               ...prev,
@@ -196,6 +197,7 @@ const Projects = () => {
                                       className="tech-icon"
                                       width={m.width}
                                       height={m.height}
+                                      loading="lazy"
                                     />
                                   )}
                                 </span>

@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { Suspense, lazy, useEffect } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 import Navegation from "./components/layouts/Navegation";
 import Main from "./components/views/Main";
 
@@ -11,6 +11,8 @@ const Contact = lazy(() => import("./components/views/Contact"));
 const Footer = lazy(() => import("./components/layouts/Footer"));
 
 function App() {
+  const [showContent, setShowContent] = useState(false);
+
   useEffect(() => {
     const loadDeferredStyles = () => {
       import("./App.deferred.css");
@@ -25,6 +27,17 @@ function App() {
     return () => window.clearTimeout(timeoutId);
   }, []);
 
+  // Defer rendering of heavy components to allow initial paint
+  useEffect(() => {
+    if ("requestIdleCallback" in window) {
+      const idleId = window.requestIdleCallback(() => setShowContent(true));
+      return () => window.cancelIdleCallback(idleId);
+    } else {
+      const timeoutId = window.setTimeout(() => setShowContent(true), 50);
+      return () => window.clearTimeout(timeoutId);
+    }
+  }, []);
+
   return (
     <>
       <Navegation />
@@ -32,14 +45,16 @@ function App() {
         Agustina Mena - Portfolio: Desarrolladora Frontend y Full Stack
       </h1>
       <Main />
-      <Suspense fallback={null}>
-        <About />
-        <Projects />
-        <StackMern />
-        <Certifications />
-        <Contact />
-        <Footer />
-      </Suspense>
+      {showContent && (
+        <Suspense fallback={null}>
+          <About />
+          <Projects />
+          <StackMern />
+          <Certifications />
+          <Contact />
+          <Footer />
+        </Suspense>
+      )}
     </>
   );
 }
