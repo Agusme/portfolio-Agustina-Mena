@@ -1,0 +1,148 @@
+/**
+ * OptimizedCarousel.css
+ * Performance optimizations for react-multi-carousel
+ * Reduces forced reflows and repaints
+ */
+
+/* CSS Containment - limits reflow/repaint scope */
+[style*="contain: layout"] {
+  contain: layout style paint;
+  will-change: contents;
+}
+
+/* Optimize carousel container */
+.certification-carousel,
+.project-carousel {
+  contain: content;
+  /* Prevent layout shift during lazy loading */
+  position: relative;
+}
+
+/* Prevent reflows during image loads */
+.certification-carousel-item,
+.project-carousel-item {
+  contain: layout style;
+  /* Use CSS Grid for more stable layout */
+  display: grid;
+  /* Force GPU acceleration */
+  will-change: auto;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimize react-multi-carousel internal elements */
+.react-multi-carousel-list {
+  contain: layout style paint;
+  overflow: hidden;
+}
+
+.react-multi-carousel-track {
+  contain: layout style;
+  will-change: transform;
+  /* Use GPU acceleration for smooth transitions */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.react-multi-carousel-item {
+  /* Prevent layout shift */
+  min-height: 0;
+  min-width: 0;
+}
+
+/* Optimize carousel navigation buttons */
+.react-multi-carousel-item--active,
+.react-multi-carousel-item--active-next,
+.react-multi-carousel-item--active-prev {
+  contain: layout style;
+}
+
+/* Prevent reflows on arrow interaction */
+button.react-multi-carousel__arrow {
+  contain: paint;
+  will-change: opacity;
+}
+
+/* Skeleton loaders - maintain consistent height */
+.skeleton-overlay {
+  contain: layout style;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.skeleton-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.skeleton-overlay.fade-in {
+  opacity: 1;
+}
+
+/* Images in carousel - prevent layout shift */
+.img-projects,
+.certification-img {
+  /* Enforce aspect ratio to prevent reflow */
+  aspect-ratio: auto;
+  contain: paint;
+  will-change: auto;
+  /* Use content-visibility for below-the-fold optimizations */
+  content-visibility: auto;
+}
+
+/* Card containers */
+.project-card,
+.certification-card {
+  contain: layout style;
+  /* Maintain consistent sizing */
+  aspect-ratio: auto;
+}
+
+/* Optimize dots/pagination */
+.react-multi-carousel__dots {
+  contain: layout style;
+}
+
+.react-multi-carousel__dots li button {
+  contain: paint;
+}
+
+/* Media queries for mobile optimization */
+@media (max-width: 768px) {
+  /* More aggressive containment on mobile */
+  .react-multi-carousel-list {
+    contain: layout style paint;
+  }
+
+  .react-multi-carousel-track {
+    will-change: transform;
+  }
+
+  /* Reduce animation complexity on mobile */
+  .react-multi-carousel-item--active,
+  .react-multi-carousel-item--active-next,
+  .react-multi-carousel-item--active-prev {
+    will-change: auto;
+  }
+}
+
+/* Prevent layout shift during scroll */
+.react-multi-carousel-list--rtl {
+  contain: layout style;
+}
+
+/* Optimize text content in carousel items */
+.react-multi-carousel-item h3,
+.react-multi-carousel-item p {
+  /* Prevent text reflow */
+  word-break: break-word;
+  overflow-wrap: break-word;
+}

@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Container, Card } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { Fade } from "react-awesome-reveal";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import { itemsProjects } from "../../data/projectsData";
 import { itemsStackMern } from "../../data/stack";
 import html5Icon from "../../assets/iconos/html5.svg";
@@ -12,29 +10,33 @@ import jsIcon from "../../assets/iconos/js.svg";
 import SkeletonComponent from "../common/SkeletonComponent";
 import CustomDot from "../common/CustomDot";
 import CarouselArrow from "../common/CarouselArrow";
+import OptimizedCarousel from "../common/OptimizedCarousel";
 
 const Projects = () => {
   const { t, i18n } = useTranslation();
   const [loaded, setLoaded] = useState({});
 
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 4,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 4,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+  const responsive = useMemo(
+    () => ({
+      superLargeDesktop: {
+        breakpoint: { max: 4000, min: 3000 },
+        items: 4,
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 4,
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2,
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+      },
+    }),
+    []
+  );
 
   return (
     <div className="pb-5 pt-5 bg-projects" id="projects">
@@ -43,7 +45,7 @@ const Projects = () => {
       </h2>
       <Fade cascade damping={0.4} duration={1200} triggerOnce={false}>
         <Container fluid>
-          <Carousel
+          <OptimizedCarousel
             customTransition="all .5s"
             infinite
             responsive={responsive}
@@ -266,7 +268,7 @@ const Projects = () => {
                 </div>
               );
             })}
-          </Carousel>
+          </OptimizedCarousel>
         </Container>
       </Fade>
     </div>
