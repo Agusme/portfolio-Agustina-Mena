@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useMemo } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./OptimizedCarousel.css";
@@ -28,12 +28,6 @@ const OptimizedCarousel = React.memo(
     const [isVisible, setIsVisible] = useState(false);
     const containerRef = useRef(null);
     const observerRef = useRef(null);
-
-    // Memoiza la configuración responsive para evitar recálculos
-    const memoizedResponsive = useMemo(
-      () => responsive,
-      [JSON.stringify(responsive)],
-    );
 
     // Intersection Observer para lazy-load del carousel
     useEffect(() => {
@@ -89,7 +83,7 @@ const OptimizedCarousel = React.memo(
             customDot={customDot}
             customLeftArrow={customLeftArrow}
             customRightArrow={customRightArrow}
-            responsive={memoizedResponsive}
+            responsive={responsive}
             removeArrowOnDeviceType={removeArrowOnDeviceType}
             itemClass={itemClass}
             shouldResetAutoplay={false}
