@@ -1,29 +1,51 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/iconfavicon.svg" />
-    <link rel="manifest" href="/manifest.json" />
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="icon" type="image/svg+xml" href="/iconfavicon.svg" />
+
+  <link rel="manifest" href="/manifest.json" />
+
+  <link
+    rel="preload"
+    href="/vendor/bootstrap.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+
+  <noscript>
+    <link rel="stylesheet" href="/vendor/bootstrap.min.css" />
+  </noscript>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+
+  <noscript>
     <link
-      rel="preload"
-      href="/vendor/bootstrap.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
     />
-    <link
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-  rel="stylesheet"
-/>
-    <noscript>
-      <link rel="stylesheet" href="/vendor/bootstrap.min.css" />
-    </noscript>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="desarrolladora, full stack, frontend, backend">
-    <meta name="description" content="Portfolio Profesional de desarrolladora fullstack">
-    <meta name="author" content="Agustina Mena">
-    <title>Agustina Mena</title>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+  </noscript>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="keywords"
+    content="desarrolladora, full stack, frontend, backend"
+  />
+
+  <meta
+    name="description"
+    content="Portfolio Profesional de desarrolladora fullstack"
+  />
+
+  <meta name="author" content="Agustina Mena" />
+
+  <title>Agustina Mena</title>
+</head>
