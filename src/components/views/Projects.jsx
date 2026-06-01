@@ -20,11 +20,11 @@ const Projects = () => {
     () => ({
       superLargeDesktop: {
         breakpoint: { max: 4000, min: 3000 },
-        items: 4,
+        items: 3,
       },
       desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 4,
+        items: 3,
       },
       tablet: {
         breakpoint: { max: 1024, min: 464 },
@@ -44,7 +44,7 @@ const Projects = () => {
         {t("projects")}
       </h2>
       <Fade cascade damping={0.4} duration={1200} triggerOnce={false}>
-        <Container fluid>
+        <Container >
           <OptimizedCarousel
             customTransition="all .5s"
             infinite

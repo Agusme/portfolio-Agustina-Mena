@@ -10,7 +10,7 @@ export default function CarouselComponent({ title, items }) {
     () => ({
       superLargeDesktop: {
         breakpoint: { max: 4000, min: 3000 },
-        items: 5,
+        items: 3,
       },
       desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -31,7 +31,7 @@ export default function CarouselComponent({ title, items }) {
   return (
     <div className="bg-projects py-4 px-2 text-green-dark">
       <Fade>
-        <Container fluid>
+        <Container>
           <h2 className="fw-bold fs-1 text-center uniform-h2">{title}</h2>
           <OptimizedCarousel
             containerClass="certification-carousel"

@@ -1,0 +1,58 @@
+/**
+ * Certification Skeleton Styles
+ * Proporciona estilos para el skeleton de carga de certificaciones sin espacios en blanco
+ */
+
+.certification-skeleton {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.certification-skeleton-img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #e9ecef;
+}
+
+.certification-skeleton-img .placeholder {
+  background-color: #90959aff !important;
+  border-radius: 8px;
+}
+
+.certification-skeleton-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.certification-skeleton-text h3 {
+  margin-bottom: 0.5rem;
+  height: 1.5rem;
+}
+
+.certification-skeleton-text p {
+  margin: 0;
+  height: 1rem;
+}
+
+/* Animación de shimmer para skeleton */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.placeholder-glow .placeholder {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(90deg, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
+  background-size: 1000px 100%;
+}
