@@ -113,6 +113,7 @@ const Projects = () => {
                                 "REACT",
                                 "TYPESCRIPT",
                                 "JAVASCRIPT",
+                                "NEXT",
                                 "HTML5",
                                 "CSS3",
                                 "TAILWINDCSS",

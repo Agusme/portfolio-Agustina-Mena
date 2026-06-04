@@ -27,7 +27,7 @@ i18n
             projects: "Proyectos",
             contact: "Contacto",
             about: "Sobre mi",
-            role: "Frontend Developer",
+            role: "Developer Full Stack",
             cta: "Hablemos",
           },
           aboutDescription: {
