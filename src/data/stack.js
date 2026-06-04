@@ -13,6 +13,7 @@ import materialui from "../assets/iconos/materialui.svg";
 import corelDr from "../assets/iconos/corelDr.svg";
 import tailwind from "../assets/iconos/TAILWIND.svg";
 import typescrypt from "../assets/iconos/typescript.svg"; 
+import next from "../assets/iconos/next.svg"; 
 
 export const itemsStackMern = [
   { nameSkill: "HTML5", imgIcon: html5, alt: "HTML5 logo", width: 107, height: 106 },
@@ -29,4 +30,5 @@ export const itemsStackMern = [
   { nameSkill: "Figma", imgIcon: figma, alt: "Figma logo", width: 106, height: 106 },
   { nameSkill: "Tailwind CSS", imgIcon: tailwind, alt: "Tailwind CSS logo", width: 36, height: 26 },
   { nameSkill: "TypeScript", imgIcon: typescrypt, alt: "TypeScript logo", width: 66, height: 66 },
+  { nameSkill: "Next.js", imgIcon: next, alt: "Next.js logo", width: 66, height: 66 },
 ];

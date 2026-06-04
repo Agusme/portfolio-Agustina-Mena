@@ -4,6 +4,7 @@ import veterinariaRolling from "../assets/proyectos/veterinaria.webp";
 import rollingMovies from "../assets/proyectos/rollingMovies.webp";
 import turismoNoa from "../assets/proyectos/turismo.webp";
 import estudioContable from "../assets/proyectos/estudioContable.webp";
+import estetica from "../assets/proyectos/estetica.webp";
 export const itemsProjects = [
   {
     name: "Inmobiliaria Bmz Propiedades v2",
@@ -24,12 +25,25 @@ export const itemsProjects = [
     img: estudioContable,
     width: 800,
     height: 363,
-    technologies: "HTML | CSS | JAVASCRIPT", // ajusta según lo que veas
+    technologies: "  JAVASCRIPT | REACT | TAILWIND CSS", // ajusta según lo que veas
     descripcion: {
       es: "Landing page de estudio contable",
       en: "Accounting firm landing page",
     },
     github: "https://github.com/tadeo14/Lofeudo-Econtable", // opcional, si quieres agregarlo
+  },
+  {
+    name: "Estética Natural",
+    url: "https://estetica-six-kappa.vercel.app/",
+    img: estetica,
+    width: 800,
+    height: 363,
+    technologies: "NEXT.JS | REACT | TYPESCRIPT | TAILWIND CSS | DAISYUI",
+  descripcion: {
+    es: "Landing page para un centro de estética.",
+    en: "Landing page for a beauty and wellness center.",
+  },
+    github: "https://github.com/Agusme/estetica#estetica-natural-landing",
   },
   {
     name: "Inmobiliaria Bmz Propiedades",

@@ -124,6 +124,7 @@ const Projects = () => {
                                 "GITHUB",
                                 "FIGMA",
                                 "CORELDRAW",
+                                "NEXT",
                               ];
 
                               let mapped = tokens
