@@ -18,11 +18,11 @@ const StackMern = () => {
             sm={6}
             xs={6}
             key={item.name}
-            className="d-flex flex-column align-items-center text-center h-100 g-4"
+            className="d-flex flex-column align-items-center text-center g-4"
           >
             <div
               className="d-flex align-items-center justify-content-center"
-              style={{ height: "80px" }}
+              style={{ height: "50px" }}
             >
               <img
                 src={item.imgIcon}
@@ -33,7 +33,9 @@ const StackMern = () => {
                 loading="lazy"
               />
             </div>
-            <p className="fw-semibold pt-2 mb-0">{item.nameSkill}</p>
+            <p className="fw-semibold text-gray">
+              {item.nameSkill}
+            </p>
           </Col>
         ))}
       </Row>
