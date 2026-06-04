@@ -31,4 +31,5 @@ export const itemsStackMern = [
   { nameSkill: "Tailwind CSS", imgIcon: tailwind, alt: "Tailwind CSS logo", width: 36, height: 26 },
   { nameSkill: "TypeScript", imgIcon: typescrypt, alt: "TypeScript logo", width: 66, height: 66 },
   { nameSkill: "Next.js", imgIcon: next, alt: "Next.js logo", width: 66, height: 66 },
+
 ];
